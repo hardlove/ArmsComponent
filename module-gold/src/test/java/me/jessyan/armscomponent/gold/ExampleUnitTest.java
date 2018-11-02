@@ -1,4 +1,4 @@
-package me.jessyan.armscomponent.zhihu;
+package me.jessyan.armscomponent.gold;
 
 import org.junit.Test;
 

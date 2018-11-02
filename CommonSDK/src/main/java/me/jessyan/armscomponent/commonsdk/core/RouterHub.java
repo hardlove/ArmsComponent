@@ -82,4 +82,6 @@ public interface RouterHub {
 
     String GOLD_HOMEACTIVITY = GOLD + "/HomeActivity";
     String GOLD_DETAILACTIVITY = GOLD + "/DetailActivity";
+
+    String VIDEO_TESTACTIVITY = "/CommonVideo/TestVideoActivity";
 }

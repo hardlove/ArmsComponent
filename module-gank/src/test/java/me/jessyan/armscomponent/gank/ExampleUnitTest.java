@@ -1,4 +1,4 @@
-package me.jessyan.armscomponent.zhihu;
+package me.jessyan.armscomponent.gank;
 
 import org.junit.Test;
 
