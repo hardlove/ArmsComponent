@@ -32,6 +32,8 @@ import butterknife.BindView;
 import butterknife.OnClick;
 import me.jessyan.armscomponent.app.R;
 import me.jessyan.armscomponent.commonsdk.core.RouterHub;
+import me.jessyan.armscomponent.commonsdk.share.ShareData;
+import me.jessyan.armscomponent.commonsdk.share.ShareManager;
 import me.jessyan.armscomponent.commonsdk.utils.Utils;
 import me.jessyan.armscomponent.commonservice.gank.service.GankInfoService;
 import me.jessyan.armscomponent.commonservice.gold.service.GoldInfoService;
@@ -142,7 +144,7 @@ public class MainActivity extends BaseActivity {
      *
      * @param view
      */
-    @OnClick({R.id.bt_zhihu, R.id.bt_gank, R.id.bt_gold})
+    @OnClick({R.id.bt_zhihu, R.id.bt_gank, R.id.bt_gold, R.id.bt_share})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.bt_zhihu:
@@ -153,6 +155,13 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.bt_gold:
                 Utils.navigation(MainActivity.this, RouterHub.GOLD_HOMEACTIVITY);
+                break;
+            case R.id.bt_share:
+                ShareManager shareManager = new ShareManager();
+                ShareData data = new ShareData();
+                data.setTitle("我是title");
+                data.setText("我是text");
+                shareManager.share(MainActivity.this,data);
                 break;
         }
     }

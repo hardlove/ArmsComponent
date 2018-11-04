@@ -28,6 +28,7 @@ import com.jess.arms.di.module.ClientModule;
 import com.jess.arms.di.module.GlobalConfigModule;
 import com.jess.arms.http.log.RequestInterceptor;
 import com.jess.arms.integration.ConfigModule;
+import com.mob.MobSDK;
 
 import java.util.List;
 
@@ -100,6 +101,9 @@ public class GlobalConfiguration implements ConfigModule {
                     RetrofitUrlManager.getInstance().setDebug(true);
                 }
                 ARouter.init(application); // 尽可能早,推荐在Application中初始化
+
+                MobSDK.init(application,"288cd81f31bf8","70b8425b3005294dd1ab489d0108775f");
+
             }
 
             @Override
