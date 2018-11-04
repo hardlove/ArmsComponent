@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/public_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/share_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/public_mar_bottom_60px"
+            android:drawableTop="@drawable/ssdk_oks_classic_wechat"
+            android:text="微信" />
+
+        <TextView
+            android:id="@+id/share_wechatmoments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/public_mar_bottom_60px"
+            android:drawableTop="@drawable/ssdk_oks_classic_wechatmoments"
+            android:text="朋友圈" />
+
+        <TextView
+            android:id="@+id/share_sinaweibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/public_mar_bottom_60px"
+            android:drawableTop="@drawable/ssdk_oks_classic_sinaweibo"
+            android:text="微博" />
+
+        <TextView
+            android:id="@+id/share_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/public_mar_bottom_60px"
+            android:drawableTop="@drawable/ssdk_oks_classic_qq"
+            android:text="QQ" />
+
+        <TextView
+            android:id="@+id/share_qzone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/public_mar_bottom_60px"
+            android:drawableTop="@drawable/ssdk_oks_classic_qzone"
+            android:text="QQ空间" />
+    </LinearLayout>
+</LinearLayout>

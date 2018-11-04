@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DevInfor>
 	<!--
+		各个平台注册应用信息的地址如下：
+			新浪微博        http://open.weibo.com
+			微信好友        http://open.weixin.qq.com
+			Facebook       https://developers.facebook.com
+			Twitter        https://dev.twitter.com
+			人人网          http://dev.renren.com
+			开心网          http://open.kaixin001.com
+			搜狐微博        http://open.t.sohu.com
+			网易微博        http://open.t.163.com
+			豆瓣           http://developers.douban.com
+	-->
+
+
+	<!--
         Wechat微信和WechatMoments微信朋友圈的appid是一样的；
         注意：开发者不能用我们这两个平台的appid,否则分享不了
            微信测试的时候，微信测试需要先签名打包出apk,
@@ -35,16 +49,16 @@
 	<SinaWeibo
         Id="3"
         SortId="3"
-        AppKey="568898243"
-        AppSecret="38a4f8204cc784f81f9f0daaf31e02e3"
+        AppKey="3491395352"
+        AppSecret="88363d73c79a9b69bc41964732652225"
         RedirectUrl="http://www.sharesdk.cn"
         ShareByAppClient="true"
         Enable="true" />
 	<QQ
 		Id="4"
 		SortId="4"
-		AppId="100371282"
-		AppKey="aed9b0303e3ed1e27bae87c33761161d"
+		AppId="1107947976"
+		AppKey="LTHAl2PuEoxzmze6"
 		BypassApproval="false"
 		ShareByAppClient="true"
 		Enable="true" />
@@ -52,8 +66,8 @@
     <QZone
         Id="5"
         SortId="5"
-		AppId="100371282"
-		AppKey="aed9b0303e3ed1e27bae87c33761161d"
+		AppId="1107947976"
+		AppKey="LTHAl2PuEoxzmze6"
 		BypassApproval="false"
         Enable="true" />
 

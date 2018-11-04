@@ -28,12 +28,16 @@ import com.jess.arms.base.BaseActivity;
 import com.jess.arms.di.component.AppComponent;
 import com.jess.arms.utils.ArmsUtils;
 
+import java.util.HashMap;
+
 import butterknife.BindView;
 import butterknife.OnClick;
+import cn.sharesdk.framework.Platform;
+import cn.sharesdk.framework.PlatformActionListener;
+import cn.sharesdk.onekeyshare.OnekeyShare;
 import me.jessyan.armscomponent.app.R;
+import me.jessyan.armscomponent.commonres.dialog.ShareDialog;
 import me.jessyan.armscomponent.commonsdk.core.RouterHub;
-import me.jessyan.armscomponent.commonsdk.share.ShareData;
-import me.jessyan.armscomponent.commonsdk.share.ShareManager;
 import me.jessyan.armscomponent.commonsdk.utils.Utils;
 import me.jessyan.armscomponent.commonservice.gank.service.GankInfoService;
 import me.jessyan.armscomponent.commonservice.gold.service.GoldInfoService;
@@ -157,12 +161,37 @@ public class MainActivity extends BaseActivity {
                 Utils.navigation(MainActivity.this, RouterHub.GOLD_HOMEACTIVITY);
                 break;
             case R.id.bt_share:
-                ShareManager shareManager = new ShareManager();
-                ShareData data = new ShareData();
+                OnekeyShare data = new OnekeyShare();
                 data.setTitle("我是title");
                 data.setText("我是text");
-                shareManager.share(MainActivity.this,data);
+                data.setCallback(new PlatformActionListener() {
+                    @Override
+                    public void onComplete(Platform platform, int i, HashMap<String, Object> hashMap) {
+
+                    }
+
+                    @Override
+                    public void onError(Platform platform, int i, Throwable throwable) {
+
+                    }
+
+                    @Override
+                    public void onCancel(Platform platform, int i) {
+
+                    }
+                });
+
+                Platform.ShareParams shareParams = new Platform.ShareParams();
+                shareParams.setText("text");
+                shareParams.setTitle("title");
+                shareParams.setComment("comment");
+                shareParams.setImagePath("http://img18.3lian.com/d/file/201709/21/85bb81c506870a1a4528509efa12bbfd.jpg");
+                ShareDialog dialog = new ShareDialog(MainActivity.this, shareParams);
+                dialog.show();
+
+//                ShareManager.getInstance().shareDefaultGui(MainActivity.this, data);
                 break;
+
         }
     }
 }

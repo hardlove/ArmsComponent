@@ -2,7 +2,15 @@ package me.jessyan.armscomponent.commonsdk.share;
 
 import android.content.Context;
 
+import cn.sharesdk.framework.Platform;
+import cn.sharesdk.framework.PlatformActionListener;
+import cn.sharesdk.framework.ShareSDK;
 import cn.sharesdk.onekeyshare.OnekeyShare;
+import cn.sharesdk.sina.weibo.SinaWeibo;
+import cn.sharesdk.tencent.qq.QQ;
+import cn.sharesdk.tencent.qzone.QZone;
+import cn.sharesdk.wechat.friends.Wechat;
+import cn.sharesdk.wechat.moments.WechatMoments;
 
 /**
  * Created by Chenlu on 2018/11/3
@@ -10,26 +18,61 @@ import cn.sharesdk.onekeyshare.OnekeyShare;
  */
 public class ShareManager {
 
-    public void share(Context context, ShareData data) {
-        OnekeyShare oks = new OnekeyShare();
-        //关闭sso授权
-        oks.disableSSOWhenAuthorize();
+    private static ShareManager mShareManager;
+    private Platform mCurrentPlatform;
 
-        // title标题，微信、QQ和QQ空间等平台使用
-        oks.setTitle(data.getTitle());
-        // titleUrl QQ和QQ空间跳转链接
-        oks.setTitleUrl(data.getTitleUrl());
-        // text是分享文本，所有平台都需要这个字段
-        oks.setText(data.getText());
-        // imagePath是图片的本地路径，Linked-In以外的平台都支持此参数
-        oks.setImagePath(data.getImagePath());//确保SDcard下面存在此张图片
-        // url在微信、微博，Facebook等平台中使用
-        oks.setUrl(data.getUrl());
-        // comment是我对这条分享的评论，仅在人人网使用
-        oks.setComment(data.getComment());
-        // 启动分享GUI
-        oks.show(context);
+    private ShareManager() {
+    }
 
+    public static ShareManager getInstance() {
+        if (mShareManager == null) {
+            synchronized (ShareManager.class) {
+                if (mShareManager == null) {
+                    mShareManager = new ShareManager();
+                }
+            }
+        }
+        return mShareManager;
+    }
+
+    public enum PlatformType {
+        Wechat, WechatMoments, SinaWeibo, QQ, QZone
+    }
+
+    /***
+     * 分享数据入口
+     * @param shareData
+     * @param listener
+     */
+    public void share(ShareData shareData, PlatformActionListener listener) {
+        switch (shareData.getType()) {
+            case QQ:
+                mCurrentPlatform = ShareSDK.getPlatform(QQ.NAME);
+                break;
+            case QZone:
+                mCurrentPlatform = ShareSDK.getPlatform(QZone.NAME);
+                break;
+            case Wechat:
+                mCurrentPlatform = ShareSDK.getPlatform(Wechat.NAME);
+                break;
+            case SinaWeibo:
+                mCurrentPlatform = ShareSDK.getPlatform(SinaWeibo.NAME);
+                break;
+            case WechatMoments:
+                mCurrentPlatform = ShareSDK.getPlatform(WechatMoments.NAME);
+                break;
+        }
+        mCurrentPlatform.setPlatformActionListener(listener);
+        mCurrentPlatform.share(shareData.getParams());
+    }
+
+    /***
+     * 使用ShareSDK默认的GUI（九宫格）分享
+     * @param context
+     * @param onekeyShare
+     */
+    public void shareDefaultGui(Context context, OnekeyShare onekeyShare) {
+        onekeyShare.show(context);
     }
 
 }

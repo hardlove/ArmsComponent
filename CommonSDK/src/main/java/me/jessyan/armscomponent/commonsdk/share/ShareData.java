@@ -1,63 +1,28 @@
 package me.jessyan.armscomponent.commonsdk.share;
 
+import cn.sharesdk.framework.Platform;
+
 /**
  * Created by Chenlu on 2018/11/3
  * Email:chenlu@globalroam.com
  */
 public class ShareData {
+    private Platform.ShareParams mParams;//分享的数据
+    private ShareManager.PlatformType mType;//分享的平台
 
-    private String title;
-    private String mTitleUrl;
-    private String mText;
-    private String mImagePath;
-    private String mUrl;
-    private String mComment;
-
-    public String getTitle() {
-        return title;
+    public Platform.ShareParams getParams() {
+        return mParams;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setParams(Platform.ShareParams params) {
+        mParams = params;
     }
 
-    public String getTitleUrl() {
-        return mTitleUrl;
+    public ShareManager.PlatformType getType() {
+        return mType;
     }
 
-    public void setTitleUrl(String titleUrl) {
-        mTitleUrl = titleUrl;
-    }
-
-    public String getText() {
-        return mText;
-    }
-
-    public void setText(String text) {
-        mText = text;
-    }
-
-    public String getImagePath() {
-        return mImagePath;
-    }
-
-    public void setImagePath(String imagePath) {
-        mImagePath = imagePath;
-    }
-
-    public String getUrl() {
-        return mUrl;
-    }
-
-    public void setUrl(String url) {
-        mUrl = url;
-    }
-
-    public String getComment() {
-        return mComment;
-    }
-
-    public void setComment(String comment) {
-        mComment = comment;
+    public void setType(ShareManager.PlatformType type) {
+        mType = type;
     }
 }
