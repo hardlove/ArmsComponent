@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="public_AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -47,4 +47,9 @@
         <!--是否模糊-->
         <item name="android:backgroundDimEnabled">true</item>
     </style>
+
+    <declare-styleable name="public_blink_layout">
+        <attr name="blink_color" format="color|reference" tools:ignore="ResourceName" />
+        <attr name="blink_animation_duration" format="integer|reference" tools:ignore="ResourceName" />
+    </declare-styleable>
 </resources>

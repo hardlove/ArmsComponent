@@ -5,4 +5,8 @@
     <string name="public_name_zhihu">知乎日报</string>
     <string name="public_name_gank">干货集中营</string>
     <string name="public_name_gold">稀土掘金</string>
+
+    <string name="public_page_error">网络开小差了</string>
+    <string name="public_page_error_retry">点击重试</string>
+    <string name="public_page_empty">暂无新数据</string>
 </resources>
