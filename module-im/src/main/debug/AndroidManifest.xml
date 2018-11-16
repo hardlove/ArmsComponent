@@ -13,7 +13,7 @@
     <application
         android:name="com.jess.arms.base.BaseApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ssdk_oks_classic_mingdao"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/public_AppTheme">
@@ -39,5 +39,12 @@
         <meta-data
             android:name="com.hardlove.cl.im.app.GlobalConfiguration"
             android:value="ConfigModule" />
+
+        <activity android:name=".mvp.ui.activity.IMActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 </manifest>

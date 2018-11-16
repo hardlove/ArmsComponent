@@ -2,6 +2,10 @@ apply from: "../common_component_build.gradle"
 
 android {
     resourcePrefix "im_" //给 Module 内的资源名增加前缀, 避免资源名冲突
+    defaultConfig{
+        multiDexEnabled true
+    }
+
 }
 
 dependencies {
@@ -10,10 +14,9 @@ dependencies {
 //因为 CommonRes 依赖了 CommonSDK, 所以如果业务模块需要公共 UI 组件就依赖 CommonRes, 如果不需要就只依赖 CommonSDK
     api project(":CommonService")
     testImplementation rootProject.ext.dependencies["junit"]
+    implementation rootProject.ext.dependencies["multidex"]
     api project(":IMKit")
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 }
 
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
+
