@@ -9,7 +9,7 @@
             android:name="com.hardlove.cl.im.app.GlobalConfiguration"
             android:value="ConfigModule" />
 
-        <activity android:name=".mvp.ui.activity.IMActivityActivity"></activity>
+        <activity android:name=".mvp.ui.activity.IMActivity"></activity>
     </application>
 
 </manifest>

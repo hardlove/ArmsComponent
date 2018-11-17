@@ -4,6 +4,8 @@ if (isBuildModule.toBoolean()) {
     apply plugin: 'com.android.library'
 }
 apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion rootProject.ext.android["compileSdkVersion"]
@@ -27,6 +29,7 @@ android {
                 includeCompileClasspath true
             }
         }
+        multiDexEnabled true
     }
     buildTypes {
         debug {
@@ -71,12 +74,12 @@ android {
 dependencies {
     if (isBuildModule.toBoolean()) {
         //view
-        annotationProcessor(rootProject.ext.dependencies["butterknife-compiler"]) {
+        kapt(rootProject.ext.dependencies["butterknife-compiler"]) {
             exclude module: 'support-annotations'
         }
         //tools
-        annotationProcessor rootProject.ext.dependencies["dagger2-compiler"]
-        annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
+        kapt rootProject.ext.dependencies["dagger2-compiler"]
+        kapt rootProject.ext.dependencies["arouter-compiler"]
         //test
         debugImplementation rootProject.ext.dependencies["canary-debug"]
         releaseImplementation rootProject.ext.dependencies["canary-release"]
@@ -88,4 +91,8 @@ dependencies {
         compileOnly rootProject.ext.dependencies["canary-debug"]
         compileOnly rootProject.ext.dependencies["canary-release"]
     }
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
 }
