@@ -24,8 +24,8 @@ public class AppLifecyclesImpl implements AppLifecycles {
 
     @Override
     public void attachBaseContext(@NonNull Context base) {
-        MultiDex.install(base);  //这里比 onCreate 先执行,常用于 MultiDex 初始化,插件化框架的初始化
-
+        if (BuildConfig.IS_BUILD_MODULE)
+            MultiDex.install(base);  //这里比 onCreate 先执行,常用于 MultiDex 初始化,插件化框架的初始化
     }
 
     @Override

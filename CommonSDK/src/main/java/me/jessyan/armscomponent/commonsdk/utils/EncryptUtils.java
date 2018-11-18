@@ -54,6 +54,8 @@ import javax.crypto.spec.SecretKeySpec;
  * decrypt3DES, decryptHexString3DES, decryptBase64_3DES : 3DES 解密
  * encryptAES, encryptAES2HexString, encryptAES2Base64   : AES 加密
  * decryptAES, decryptHexStringAES, decryptBase64AES     : AES 解密
+ *
+ * 备注:DES 密钥的长度必须是8，AES 密钥的长度必须是16
  */
 public final class EncryptUtils {
 
