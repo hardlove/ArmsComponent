@@ -5,7 +5,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
+    <Button
+        android:text="登陆IM"
+        android:onClick="LoginIM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
     <TextView
         android:id="@+id/im_textview"
         android:layout_width="match_parent"

@@ -1,4 +1,3 @@
-include ':app', ':CommonSDK', ':CommonService', ':CommonRes', ':module-zhihu', ':module-gank', ':module-im', ':module-gold', ':CommonVideo', ':module-im', ':IMLib', ':IMKit'
-//第三方library放在ThirdLibrarys目录下
+include ':app', ':CommonSDK', ':CommonService', ':CommonRes', ':module-zhihu', ':module-gank', ':module-im', ':module-gold', ':CommonVideo', ':IMLib', ':IMKit'
 project(':IMLib').projectDir = new File('ThirdLibrarys/IMLib')
 project(':IMKit').projectDir = new File('ThirdLibrarys/IMKit')
