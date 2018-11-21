@@ -52,6 +52,10 @@
         </activity>
 
         <!-- ================================融云IM============================= -->
+        <!--IM中如需使用位置功能，需要配置高德官网获取的AppKey-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="77c6713d69e91f0c28f33c312b2eb6b6" />
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="com.hardlove.cl.im.FileProvider"
@@ -103,6 +107,20 @@
                     android:scheme="rong" />
             </intent-filter>
         </activity>
+
+        <!--
+        当应用处于后台运行或者和融云服务器 disconnect() 的时候，如果收到消息，融云 SDK 会以通知形式提醒您。      -->
+        <receiver
+            android:exported="true"
+            android:name=".receiver.IMPushMessageReceiver">
+            <intent-filter>
+                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MESSAGE_CLICKED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_CLICKED" />
+                <action android:name="io.rong.push.intent.THIRD_PARTY_PUSH_STATE" />
+            </intent-filter>
+        </receiver>
 
     </application>
 
