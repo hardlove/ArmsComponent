@@ -7,10 +7,10 @@ import com.jess.arms.di.component.AppComponent;
 import com.hardlove.cl.im.di.module.ConversionListModule;
 
 import com.jess.arms.di.scope.ActivityScope;
-import com.hardlove.cl.im.mvp.ui.activity.ConversionListActivity;
+import com.hardlove.cl.im.mvp.ui.activity.ConversationListActivity;
 
 @ActivityScope
 @Component(modules = ConversionListModule.class, dependencies = AppComponent.class)
 public interface ConversionListComponent {
-    void inject(ConversionListActivity activity);
+    void inject(ConversationListActivity activity);
 }

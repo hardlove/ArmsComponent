@@ -5,9 +5,30 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/user1"
+            android:layout_weight="1"
+            android:text="登陆User2"
+            android:onClick="LoginIM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/user2"
+            android:layout_weight="1"
+            android:text="登陆User2"
+            android:onClick="LoginIM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
     <Button
-        android:text="登陆IM"
-        android:onClick="LoginIM"
+        android:onClick="goChat"
+        android:text="打开聊天界面"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView

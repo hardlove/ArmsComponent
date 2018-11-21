@@ -26,6 +26,9 @@ import static com.squareup.haha.guava.base.Joiner.checkNotNull;
 
 public class IMActivity extends BaseActivity<IMPresenter> implements IMContract.View {
 
+    private String mUserId;
+    private String mToken;
+
     @Override
     public void setupActivityComponent(@NonNull AppComponent appComponent) {
         DaggerIMComponent //如找不到该类,请编译一下项目
@@ -73,13 +76,32 @@ public class IMActivity extends BaseActivity<IMPresenter> implements IMContract.
         finish();
     }
 
+    String[] mUserIds = {"user1", "user2", "user3"};
+    String[] mTokens = {"VEbYDtJGWQFZ9WhcmLtOjZz/ywqWaA30O2E9H001KP3o5QGjKADroR/8pYDB/6WORYJSG1ZQFA2jcSge/NIzMQ==",
+            "fvWz3RD4jH8Lmx7te1qYTpz/ywqWaA30O2E9H001KP3o5QGjKADroQTjk66VBZLFx6bnTlXBA+bw8vWSqskCQA=="};
+
     public void LoginIM(View view) {
-        String userId = "user_id_1";
-        String token = "NFron1Zef0CnaxVbD3MQ2Zz/ywqWaA30O2E9H001KP3o5QGjKADroWjbkRPeAI6SI78AraZs6HvBiYv6QCXfLJ9ubwk90HMi";
-        connect(token);
-        showMessage("登陆。。。");
+        int index = 0;
+        if (view.getId() == R.id.user1) {
+            index = 0;
+        } else if (view.getId() == R.id.user2) {
+            index = 1;
+        }
+        mUserId = mUserIds[index];
+        mToken = mTokens[index];
+        showMessage("登陆。。。" + mUserId);
+        connect(mToken);
     }
 
+    public void goChat(View view) {
+        String userId = "user1";
+        if (mUserId.equals("user1")) {
+            userId = "user2";
+        } else if (mUserId.equals("user2")) {
+            userId = "user1";
+        }
+        RongIM.getInstance().startPrivateChat(this, userId, "title:" + userId);
+    }
 
     private void connect(String token) {
         if (ProcessUtils.isMainProcess(this)) {
@@ -101,8 +123,7 @@ public class IMActivity extends BaseActivity<IMPresenter> implements IMContract.
                 @Override
                 public void onSuccess(String userid) {
                     Log.d(TAG, "--onSuccess" + userid);
-                    startActivity(new Intent(IMActivity.this, ConversionListActivity.class));
-                    finish();
+                    startActivity(new Intent(IMActivity.this, ConversationListActivity.class));
                 }
 
                 /**
