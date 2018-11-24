@@ -5,7 +5,7 @@ android {
     buildToolsVersion rootProject.ext.android["buildToolsVersion"]
     defaultConfig {
         minSdkVersion rootProject.ext.android["minSdkVersion"]
-        targetSdkVersion 23
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
         versionCode 2018101821
         versionName "2.9.7 Stable"
     }

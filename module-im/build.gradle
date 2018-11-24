@@ -17,6 +17,7 @@ dependencies {
     api project(':CommonService')
     testImplementation rootProject.ext.dependencies["junit"]
     implementation project(':IMKit')
+    implementation project(':RCSticker')
 }
 
 
