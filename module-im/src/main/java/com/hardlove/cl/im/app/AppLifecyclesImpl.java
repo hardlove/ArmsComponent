@@ -14,6 +14,7 @@ import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
 
 import io.rong.imkit.RongIM;
+import io.rong.imlib.model.Conversation;
 import io.rong.imlib.model.Group;
 import io.rong.imlib.model.UserInfo;
 import me.jessyan.armscomponent.commonsdk.utils.ProcessUtils;
@@ -88,6 +89,11 @@ public class AppLifecyclesImpl implements AppLifecycles {
 
             }
         });//设置地理位置提供者,不用位置的同学可以注掉此行代码
+
+        //设置支持消息回执的会话类型。目前只支持 PRIVATE、GROUP 和 DISCUSSION 三种类型，如果不设置的话，默认只有 PRIVATE 类型的会话支持消息回执。
+        RongIM.getInstance().setReadReceiptConversationTypeList(Conversation.ConversationType.PRIVATE,
+                Conversation.ConversationType.GROUP,
+                Conversation.ConversationType.DISCUSSION);
     }
 
     @Override
