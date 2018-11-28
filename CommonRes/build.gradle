@@ -31,6 +31,8 @@ dependencies {
     }
     api rootProject.ext.dependencies["paginate"]
     api rootProject.ext.dependencies["lottie"]
-    api "com.github.huburt-Hu:NewbieGuide:v2.4.0"
+
+    api rootProject.ext.dependencies["navigation-bar"]
+    api rootProject.ext.dependencies["NewbieGuide"]
 
 }
