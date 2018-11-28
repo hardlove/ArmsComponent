@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.hardlove.mobiledf.widgets.CustomToolBar
+        android:id="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:leftText="历史检测结果"
+        app:rightSubIcon="@mipmap/nav_icon_screening"
+        app:rightIcon="@mipmap/nav_icon_my"
+        >
+    </com.hardlove.mobiledf.widgets.CustomToolBar>
+
+    <com.hardlove.mobiledf.widgets.NetWorkView
+        android:id="@+id/network_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+    </com.hardlove.mobiledf.widgets.NetWorkView>
+
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:id="@id/lRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.github.jdsjlzx.recyclerview.LRecyclerView>
+
+</LinearLayout>

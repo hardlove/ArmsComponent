@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/color_FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/defender_y_ui_px_37.0"
+    android:paddingTop="@dimen/defender_y_ui_px_37.0">
+
+    <ImageView
+        android:scaleType="fitCenter"
+        android:minWidth="@dimen/defender_x_ui_px_41.0"
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/defender_x_ui_px_37.0"
+        android:layout_marginRight="@dimen/defender_x_ui_px_37.0" />
+
+    <TextView
+        android:id="@+id/iv_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/defender_x_ui_px_32.0"
+        android:layout_weight="1"
+        android:textColor="@color/color_505050"
+        android:textSize="@dimen/defender_font_ui_px_28.0" />
+</LinearLayout>

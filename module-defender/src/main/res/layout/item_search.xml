@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/defender_x_ui_px_40.0"
+    android:layout_marginRight="@dimen/defender_x_ui_px_40.0"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_histroy" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/defender_y_ui_px_37.0"
+            android:paddingLeft="@dimen/defender_x_ui_px_54.0"
+            android:paddingTop="@dimen/defender_y_ui_px_37.0"
+            android:text="亚硝酸盐"
+            android:textColor="@color/color_505050"
+            android:textSize="@dimen/defender_font_ui_px_32.0" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_delete" />
+    </LinearLayout>
+
+    <include layout="@layout/gray_line" />
+
+</LinearLayout>

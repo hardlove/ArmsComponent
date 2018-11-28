@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/defender_x_ui_px_81.0"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/defender_x_ui_px_40.0"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/defender_font_ui_px_28.0"
+        android:textStyle="bold"
+        tools:text="| 如何录入检测信息？"/>
+
+    <include layout="@layout/gray_line"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/defender_x_ui_px_41.0"
+        android:layout_marginRight="@dimen/defender_x_ui_px_41.0"
+        android:lineSpacingExtra="@dimen/defender_y_ui_px_18.0"
+        android:paddingBottom="@dimen/defender_y_ui_px_20.0"
+        android:paddingTop="@dimen/defender_y_ui_px_20.0"
+        android:textColor="@color/color_9D9D9D"
+        android:textSize="@dimen/defender_font_ui_px_24.0"
+        tools:text="在首页点击右下方的黄色按钮即可“录入检测信息。”"/>
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/defender_y_ui_px_20.0"
+        android:layout_marginLeft="@dimen/defender_x_ui_px_31.0"
+        android:layout_marginRight="@dimen/defender_x_ui_px_31.0"
+        android:scaleType="fitXY"
+        tools:src="@mipmap/one"/>
+</LinearLayout>

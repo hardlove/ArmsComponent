@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/defender_y_ui_px_113.0"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/defender_x_ui_px_40.0"
+            android:layout_marginRight="@dimen/defender_x_ui_px_70.0"
+            android:src="@mipmap/nav_icon_back_black" />
+
+        <EditText
+            android:id="@+id/edt_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请点击输入关键词"
+            android:textColorHint="@color/color_84878D" />
+
+        <ImageView
+            android:id="@+id/iv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/defender_x_ui_px_58.0"
+            android:src="@mipmap/icon_delete" />
+
+
+    </LinearLayout>
+
+    <include layout="@layout/gray_line" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <com.github.jdsjlzx.recyclerview.LRecyclerView
+            android:id="@+id/history_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.github.jdsjlzx.recyclerview.LRecyclerView>
+
+    </FrameLayout>
+
+
+</LinearLayout>

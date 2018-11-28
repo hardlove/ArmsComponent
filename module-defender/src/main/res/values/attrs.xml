@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TitleEditText">
+        <attr name="mTitle" format="string|reference" />
+        <attr name="mTitleSize" format="dimension" />
+        <attr name="titleNormalColor" format="color|reference" />
+        <attr name="titleActiveColor" format="color|reference" />
+
+        <attr name="hint" format="string|reference" />
+        <attr name="editSize" format="dimension" />
+        <attr name="verPadding" format="dimension" />
+
+    </declare-styleable>
+
+
+    <declare-styleable name="CustomToolBar">
+        <attr name="leftIcon" format="reference" />
+        <attr name="leftText" format="reference|string" />
+        <attr name="centerText" format="reference|string" />
+        <attr name="leftTitle" format="reference|string" />
+        <attr name="rightText" format="reference|string" />
+        <attr name="rightSubText" format="reference|string" />
+        <attr name="rightIcon" format="reference" />
+        <attr name="rightSubIcon" format="reference" />
+        <attr name="titleTextSize" format="dimension" />
+        <attr name="titleTextColor" format="color" />
+        <attr name="pressAlpha" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="StateButton">
+        <!--text color-->
+        <attr name="normalTextColor" format="color" />
+        <attr name="pressedTextColor" format="color|reference" />
+        <attr name="unableTextColor" format="color|reference" />
+        <!--stroke width and color, dash width, dash gap-->
+        <attr name="strokeDashWidth" format="dimension|reference" />
+        <attr name="strokeDashGap" format="dimension|reference" />
+        <attr name="normalStrokeWidth" format="dimension|reference" />
+        <attr name="pressedStrokeWidth" format="dimension|reference" />
+        <attr name="unableStrokeWidth" format="dimension|reference" />
+        <attr name="normalStrokeColor" format="color|reference" />
+        <attr name="pressedStrokeColor" format="color|reference" />
+        <attr name="unableStrokeColor" format="color|reference" />
+        <!--background color-->
+        <attr name="normalBackgroundColor" format="color|reference" />
+        <attr name="pressedBackgroundColor" format="color|reference" />
+        <attr name="unableBackgroundColor" format="color|reference" />
+        <!--background radius-->
+        <attr name="radius" format="dimension|reference" />
+        <attr name="round" format="boolean|reference" />
+        <!--animation duration-->
+        <attr name="animationDuration" format="integer|reference" />
+    </declare-styleable>
+
+
+</resources>

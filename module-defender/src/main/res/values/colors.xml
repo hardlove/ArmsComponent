@@ -1,4 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="color_2265A9">#2265A9</color>
+    <color name="color_3586DA">#3586DA</color>
+    <color name="color_C2C2C2">#C2C2C2</color>
+    <color name="color_FFFFFF">#FFFFFF</color>
+    <color name="color_FF9800">#FF9800</color>
+    <color name="color_505050">#505050</color>
+    <color name="color_BCC1C6">#BCC1C6</color>
+    <color name="color_090909">#090909</color>
+    <color name="color_000000">#000000</color>
+    <color name="color_1F1F1F">#1F1F1F</color>
+    <color name="color_0D0D0D">#0D0D0D</color>
+    <color name="color_222222">#222222</color>
+    <color name="color_84878D">#84878D</color>
+    <color name="color_DDE1E6">#DDE1E6</color>
+    <color name="color_F44336">#F44336</color>
+    <color name="color_EFF1F0">#EFF1F0</color>
+    <color name="color_line">#DADADA</color>
+    <color name="color_F2F2F2">#F2F2F2</color>
+    <color name="color_9D9D9D">#9D9D9D</color>
+    <color name="color_transparent">#00000000</color>
+    <color name="color_background">@color/color_EFF1F0</color>
 
+
+
+    <color name="colorPrimaryDark">@color/color_2265A9</color>
+    <color name="colorPrimary">@color/color_3586DA</color>
+    <color name="colorAccent">@color/color_3586DA</color>
+    <color name="ccolor_F2F2F2">#F2F2F2</color>
 </resources>

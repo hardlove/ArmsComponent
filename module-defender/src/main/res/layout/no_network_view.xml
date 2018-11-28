@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/no_network_layer"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/emptystate_page_nonetwork"/>
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/defender_y_ui_px_21.0"
+        android:text="网络无法连接"
+        android:textColor="@color/color_BCC1C6"
+        android:textSize="@dimen/defender_font_ui_px_28.0"/>
+
+    <Button
+        android:id="@+id/btn_reload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/color_transparent"
+        android:text="点击重新加载"
+        android:textColor="@color/colorPrimary"/>
+
+</LinearLayout>

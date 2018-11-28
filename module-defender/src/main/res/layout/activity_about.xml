@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.hardlove.mobiledf.widgets.CustomToolBar
+        android:id="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftIcon="@mipmap/nav_icon_back"
+        app:leftTitle="关于我们"
+        >
+
+    </com.hardlove.mobiledf.widgets.CustomToolBar>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/defender_y_ui_px_70.0"
+        android:src="@mipmap/aboutus_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/defender_y_ui_px_26.0"
+        android:text="Food Defender"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/defender_font_ui_px_42.0"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/defender_x_ui_px_36.0"
+        android:text="产品介绍"
+        android:textColor="@color/color_0D0D0D"
+        android:textSize="@dimen/defender_font_ui_px_28.0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/defender_x_ui_px_36.0"
+        android:layout_marginRight="@dimen/defender_x_ui_px_36.0"
+        android:layout_marginTop="@dimen/defender_y_ui_px_49.0"
+        android:lineSpacingExtra="@dimen/defender_y_ui_px_20.0"
+        android:text="@string/product_introduce"
+        android:textColor="@color/color_505050"
+        android:textSize="@dimen/defender_font_ui_px_28.0" />
+</LinearLayout>

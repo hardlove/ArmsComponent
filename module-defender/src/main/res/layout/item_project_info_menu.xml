@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/defender_x_ui_px_40.0"
+    android:textSize="@dimen/defender_font_ui_px_32.0"
+    android:layout_height="@dimen/defender_y_ui_px_89.0"/>

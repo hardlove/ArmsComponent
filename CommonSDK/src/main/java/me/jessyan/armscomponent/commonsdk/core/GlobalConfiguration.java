@@ -54,8 +54,12 @@ import timber.log.Timber;
  */
 public class GlobalConfiguration implements ConfigModule {
 
+    public static Context application;
+
     @Override
     public void applyOptions(Context context, GlobalConfigModule.Builder builder) {
+        application = context.getApplicationContext();
+
         if (!BuildConfig.LOG_DEBUG) //Release 时,让框架不再打印 Http 请求和响应的信息
             builder.printHttpLogLevel(RequestInterceptor.Level.NONE);
         builder.baseurl(Api.APP_DOMAIN)
@@ -104,7 +108,7 @@ public class GlobalConfiguration implements ConfigModule {
                 }
                 ARouter.init(application); // 尽可能早,推荐在Application中初始化
 
-                MobSDK.init(application,"288cd81f31bf8","70b8425b3005294dd1ab489d0108775f");
+                MobSDK.init(application, "288cd81f31bf8", "70b8425b3005294dd1ab489d0108775f");
 
             }
 

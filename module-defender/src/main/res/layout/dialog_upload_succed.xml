@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/color_FFFFFF"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/defender_y_ui_px_59.0">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/tilps_upload_successfully" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/defender_y_ui_px_49.0"
+        android:paddingLeft="@dimen/defender_font_ui_px_43.0"
+        android:paddingRight="@dimen/defender_x_ui_px_43.0"
+        android:text="上传成功"
+        android:textColor="@color/color_1F1F1F"
+        android:textSize="@dimen/defender_font_ui_px_36.0"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/defender_y_ui_px_30.0"
+        android:paddingLeft="@dimen/defender_font_ui_px_43.0"
+        android:paddingRight="@dimen/defender_x_ui_px_43.0"
+        android:text="已将所有结果上传到云端"
+        android:textColor="@color/color_222222"
+        android:textSize="@dimen/defender_font_ui_px_32.0" />
+
+
+</LinearLayout>

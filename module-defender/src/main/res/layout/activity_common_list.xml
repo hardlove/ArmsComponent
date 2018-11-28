@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.hardlove.mobiledf.widgets.CustomToolBar
+        android:id="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftIcon="@mipmap/nav_icon_back"
+        app:leftTitle="未上传结果X条"
+        app:rightIcon="@mipmap/nav_icon_upload">
+
+    </com.hardlove.mobiledf.widgets.CustomToolBar>
+
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:id="@id/lRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.github.jdsjlzx.recyclerview.LRecyclerView>
+</LinearLayout>

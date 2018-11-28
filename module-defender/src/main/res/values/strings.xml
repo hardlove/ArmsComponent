@@ -1,3 +1,50 @@
 <resources>
     <string name="app_name">食品安全卫士</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="mine">我的</string>
+    <string name="product_introduce">Food defender是专为赛默飞世尔科技手持式拉曼光谱仪用户推出的数据管理软件，让您快速实现检测信息录入、方法管理和结果上传等功能。欢迎您使用体验，并提出宝贵意见和建议。</string>
+    <string name="method_detection">检测方法</string>
+    <string name="method_info">项目信息</string>
+    <string name="project_method_info_search_hint">请点击输入关键字</string>
+    <string name="upload_tips">您当前共有X个检测结果未上传,请立即上传</string>
+    <string name="home">首页</string>
+    <string name="checked_size">已选中 X</string>
+    <string name="clear_history">清除历史记录</string>
+    <string name="company">上海赛默飞世尔科技有限公司</string>
+    <string name="swatch_net">正在连接互联网,请等待...</string>
+    <string name="sample_type">样品分类<font color='#ff0000'>*</font></string>
+    <string name="sample_name">样品名称<font color='#ff0000'>*</font></string>
+    <string name="check_project">检测项目<font color='#ff0000'>*</font></string>
+    <string name="file_name">文件名<font color='#ff0000'>*</font></string>
+    <string name="customer_signature_photo">商户签字照片<font color='#ff0000'>*</font></string>
+    <string name="hint_subject">请点击输入受检对象</string>
+    <string name="hint_subject_key">请点击输入受检对象关键字</string>
+    <string name="hint_other_info">请点击输入其它信息</string>
+    <string name="open">展开</string>
+    <string name="pack_up">收起</string>
+
+    <string-array name="help_titles">
+        <item>| 如何录入检测信息？</item>
+        <item>| 如何同步检测结果到手机？</item>
+        <item>| 同步检测结果到手机失败怎么办？</item>
+        <item>| 如何补充检测结果信息？</item>
+        <item>| 如何上传检测结果？</item>
+        <item>| 如何查看历史检测结果？</item>
+        <item>| 如何查看统计分析结果？</item>
+        <item>| 如何对APP提供意见反馈？</item>
+    </string-array>
+    <string-array name="help_contents">
+        <item>在首页点击右下方的黄色按钮即可“录入检测信息。”</item>
+        <item>在首页点击右下方红色的按钮即可“同步检测结果”到手机，若按钮呈灰色则不可同步，应先“录入检测信息。”</item>
+        <item>若同步失败会弹出“文件匹配失败”的弹框，点击文件名按钮后可返回“录入检测信息”状态的页面修改文件名。修改后若文件名匹配成功则自动返回“首页。”</item>
+        <item>点击导航栏下方出现的“浮层提示栏”进入到“未上传结果”列表，点击任意检测结果进入到“未上传结果详情。”在此页面可以修改“受检对象；样品编号；其他信息。上传相应图片。”</item>
+        <item>录入信息后，点击“浮层提示”进入“未上传结果”界面。点击右上角的“上传”图标即可上传检测结果，上传成功后可在“历史”页面里查看。</item>
+        <item>1点击 “历史”进入“历史检测结果”页面，点击右上角的“筛选”图标，可查看筛选条件（包括“样品分类” “样品名称” “检测项目” “受检对象” “判定结果” “检测时间段”）。 点击“确定”按钮，筛选完毕。 2可点击任意表单信息，进入“已上传结果详情”页面。</item>
+        <item>1点击“统计分析”进入“统计分析”页面。点击“统计周期”弹出“统计周期”弹窗（包括“当天” “最近一周” “最近一个月” “最近半年” “最近一年” “全部” ），点击选择之后即可。 2点击“查看详情”进入“阳性检测结果”页面。点击任意表单信息，进入“已上传结果详情”页面。</item>
+        <item>点击 右上角“我的”图标，进入“我的”页面，点击“意见反馈”，进入“意见反馈”页面。输入“邮件”和“意见”之后点击右上角“发送”图标即可。</item>
+    </string-array>
 </resources>

@@ -34,5 +34,6 @@ dependencies {
 
     api rootProject.ext.dependencies["navigation-bar"]
     api rootProject.ext.dependencies["NewbieGuide"]
+    api rootProject.ext.dependencies["fab"]
 
 }

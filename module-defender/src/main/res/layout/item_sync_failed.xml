@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/defender_y_ui_px_31.0"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/defender_y_ui_px_71.0"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:id="@+id/layout_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:paddingBottom="@dimen/defender_y_ui_px_19.0"
+        android:paddingTop="@dimen/defender_y_ui_px_19.0">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@mipmap/tilps_icon_filename"
+            android:drawablePadding="@dimen/defender_x_ui_px_28.0"
+            android:text="007"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="@dimen/defender_font_ui_px_36.0" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/defender_x_ui_px_53.0"
+        android:layout_marginRight="@dimen/defender_x_ui_px_53.0"
+        android:minHeight="@dimen/defender_x_ui_px_41.0"
+        android:minWidth="@dimen/defender_x_ui_px_41.0"
+        android:src="@mipmap/tilps_icon_remove" />
+
+</LinearLayout>

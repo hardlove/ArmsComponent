@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/searchLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/defender_x_ui_px_113.0"
+    android:background="@color/color_3586DA"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/searchEdit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/defender_y_ui_px_16.0"
+        android:layout_marginLeft="@dimen/defender_x_ui_px_15.0"
+        android:layout_marginRight="@dimen/defender_x_ui_px_15.0"
+        android:layout_marginTop="@dimen/defender_y_ui_px_16.0"
+        android:background="@color/color_FFFFFF"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/defender_x_ui_px_100.0"
+        android:text="@string/project_method_info_search_hint"
+        android:textColor="@color/color_84878D" />
+
+    <ImageView
+        android:id="@+id/searchIcon"
+        android:layout_width="@dimen/defender_x_ui_px_81.0"
+        android:layout_height="@dimen/defender_y_ui_px_81.0"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/defender_x_ui_px_15.0"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="@dimen/defender_y_ui_px_23.0"
+        android:paddingLeft="@dimen/defender_x_ui_px_24.0"
+        android:paddingRight="@dimen/defender_x_ui_px_24.0"
+        android:paddingTop="@dimen/defender_y_ui_px_23.0"
+        android:src="@mipmap/icon_search" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_gravity="bottom"
+        android:background="@color/color_3586DA" />
+</FrameLayout>

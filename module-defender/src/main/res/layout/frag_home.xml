@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.hardlove.mobiledf.widgets.CustomToolBar
+        android:id="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:leftText="首页"
+        app:rightSubIcon="@mipmap/nav_icon_my"
+        app:rightIcon="@mipmap/nav_icon_help"
+        ></com.hardlove.mobiledf.widgets.CustomToolBar>
+
+    <android.support.v7.widget.ContentFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/defender_defender_y_ui_px_31.0"
+            android:src="@mipmap/emptystate_message"/>
+
+
+        <com.github.jdsjlzx.recyclerview.LRecyclerView
+            android:id="@id/lRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.github.jdsjlzx.recyclerview.LRecyclerView>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/defender_defender_y_ui_px_219.0"
+            android:layout_marginRight="@dimen/defender_x_ui_px_32.0">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_create_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/botton_create"
+                android:visibility="invisible"
+                app:fab_colorNormal="@color/color_FF9800"
+                app:fab_colorPressed="@color/color_FF9800"
+                app:fab_showShadow="false"
+                />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/botton_create"
+                app:fab_colorNormal="@color/color_FF9800"
+                app:fab_colorPressed="@color/color_FF9800"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/defender_y_ui_px_79.0"
+            android:layout_marginRight="@dimen/defender_x_ui_px_32.0">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_snyc_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/botton_download"
+                android:visibility="invisible"
+                app:fab_colorDisabled="@color/color_C2C2C2"
+                app:fab_colorNormal="@color/color_F44336"
+                app:fab_colorPressed="@color/color_F44336"
+                app:fab_showShadow="false"
+                />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_snyc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/botton_download"
+                app:fab_colorDisabled="@color/color_C2C2C2"
+                app:fab_colorNormal="@color/color_F44336"
+                app:fab_colorPressed="@color/color_F44336"
+                />
+
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="1dp"
+                android:background="@drawable/circle_red"
+                android:gravity="center"
+                android:padding="@dimen/defender_x_ui_px_15.0"
+                android:text="4/5"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="@dimen/defender_font_ui_px_28.0"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.ContentFrameLayout>
+
+
+</LinearLayout>

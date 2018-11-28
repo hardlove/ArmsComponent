@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/color_FFFFFF"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/defender_y_ui_px_46.0"
+    android:paddingLeft="@dimen/defender_x_ui_px_40.0"
+    android:paddingRight="@dimen/defender_x_ui_px_40.0"
+    android:paddingBottom="@dimen/defender_y_ui_px_59.0">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/defender_x_ui_px_43.0"
+        android:text="文件名匹配失败"
+        android:textColor="@color/color_1F1F1F"
+        android:textSize="@dimen/defender_font_ui_px_36.0"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@id/recyclerView"
+        android:layout_marginTop="@dimen/defender_y_ui_px_39.0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/defender_y_ui_px_10.0"
+        android:paddingRight="@dimen/defender_x_ui_px_43.0"
+        android:text="以上结果匹配失败，请点击修改文件名"
+        android:textColor="@color/color_F44336"
+        android:textSize="@dimen/defender_font_ui_px_32.0" />
+
+
+</LinearLayout>

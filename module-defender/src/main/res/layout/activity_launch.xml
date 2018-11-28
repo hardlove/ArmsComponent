@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/defoult_bd_image" />
+
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/defender_y_ui_px_133.0"
+        android:src="@mipmap/defoult_logo" />
+
+    <TextView
+        android:id="@+id/tv_app_name_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/defender_y_ui_px_46.0"
+        android:gravity="center"
+        android:text="Food Defender"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="@dimen/defender_font_ui_px_47.0" />
+
+    <TextView
+        android:id="@+id/tv_app_name_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_app_name_e"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/defender_y_ui_px_46.0"
+        android:gravity="center"
+        android:text="食品安全卫士"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="@dimen/defender_font_ui_px_40.0" />
+
+</RelativeLayout>

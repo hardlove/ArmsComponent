@@ -17,9 +17,12 @@ dependencies {
     testImplementation rootProject.ext.dependencies["junit"]
 
     implementation rootProject.ext.dependencies["MPAndroidChart"]
-
     implementation rootProject.ext.dependencies["stetho"]
     implementation rootProject.ext.dependencies["stetho_realm"]
 
 
+
 }
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'

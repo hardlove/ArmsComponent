@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/item_root"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/defender_x_ui_px_180.0"
+             android:layout_marginLeft="@dimen/defender_x_ui_px_35.0"
+             android:layout_marginRight="@dimen/defender_x_ui_px_35.0"
+             android:background="@drawable/item_selector_bg"
+             android:descendantFocusability="blocksDescendants"
+             android:gravity="center_vertical"
+             android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:id="@+id/iv_printed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="right|top"
+        android:src="@mipmap/list_label"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/defender_y_ui_px_20.0"
+
+        android:paddingLeft="@dimen/defender_x_ui_px_22.0"
+        android:paddingRight="@dimen/defender_x_ui_px_22.0"
+        android:paddingTop="@dimen/defender_y_ui_px_20.0">
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/list_icon_location"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:text="上海市浦东新区新金桥路27号家乐福超市"
+            android:textColor="@color/color_090909"
+            android:textSize="@dimen/defender_font_ui_px_28.0"/>
+
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/defender_y_ui_px_1.0"
+            android:layout_below="@id/tv_location"
+            android:background="@mipmap/list_dividers"/>
+
+        <LinearLayout
+            android:id="@+id/layou_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <!--第一栏-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_00_t"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="样品编号："
+                            android:textColor="@color/color_BCC1C6"
+                            android:textSize="@dimen/defender_font_ui_px_24.0"/>
+
+                        <TextView
+                            android:id="@+id/tv_00"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:lines="1"
+                            android:text="003"
+                            android:textColor="@color/color_84878D"
+                            android:textSize="@dimen/defender_font_ui_px_24.0"/>
+
+                        <TextView
+                            android:id="@+id/tv_01_t"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="结果："
+                            android:textColor="@color/color_BCC1C6"
+                            android:textSize="@dimen/defender_font_ui_px_24.0"/>
+
+                        <TextView
+                            android:id="@+id/tv_01"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:lines="1"
+                            android:text="检出"
+                            android:textColor="@color/color_84878D"
+                            android:textSize="@dimen/defender_font_ui_px_24.0"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--第二栏-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_10_t"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="检测项目："
+                            android:textColor="@color/color_BCC1C6"
+                            android:textSize="@dimen/defender_font_ui_px_24.0"/>
+
+                        <TextView
+                            android:id="@+id/tv_10"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:lines="1"
+                            android:text="酸性色素"
+                            android:textColor="@color/color_84878D"
+                            android:textSize="@dimen/defender_font_ui_px_24.0"/>
+
+                        <TextView
+                            android:id="@+id/tv_11_t"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="样品："
+                            android:textColor="@color/color_BCC1C6"
+                            android:textSize="@dimen/defender_font_ui_px_24.0"/>
+
+                        <TextView
+                            android:id="@+id/tv_11"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:lines="1"
+                            android:text="牛奶"
+                            android:textColor="@color/color_84878D"
+                            android:textSize="@dimen/defender_font_ui_px_24.0"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/radius_primary"
+                android:gravity="center"
+                android:paddingBottom="@dimen/defender_y_ui_px_8.0"
+                android:paddingLeft="@dimen/defender_x_ui_px_18.0"
+                android:paddingRight="@dimen/defender_x_ui_px_18.0"
+                android:paddingTop="@dimen/defender_y_ui_px_8.0"
+                android:text="详情"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="@dimen/defender_font_ui_px_20.0"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/layou_center"
+            android:gravity="right|bottom"
+            android:text="2017-03-24"
+            android:textColor="@color/color_BCC1C6"
+            android:textSize="@dimen/defender_font_ui_px_20.0"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.hardlove.mobiledf.widgets.CustomToolBar
+        android:id="@id/toolbar"
+        app:leftIcon="@mipmap/nav_icon_back"
+        app:leftTitle="样品分类"
+        app:titleTextSize="@dimen/defender_y_ui_px_40.0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.hardlove.mobiledf.widgets.CustomToolBar>
+
+    <TextView
+        android:text="请选择您要检测的样品分类"
+        android:textStyle="bold"
+        android:textColor="@color/color_505050"
+        android:textSize="@dimen/defender_font_ui_px_28.0"
+        android:layout_marginLeft="@dimen/defender_x_ui_px_43.0"
+        android:layout_marginTop="@dimen/defender_y_ui_px_36.0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:padding="@dimen/defender_x_ui_px_40.0"
+        android:id="@id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

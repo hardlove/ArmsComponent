@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.hardlove.mobiledf.MainActivity">
+
+
+    <include layout="@layout/content_main" />
+
+
+    <TextView
+        android:id="@+id/un_upload_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/defender_y_ui_px_71.0"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/color_F44336"
+        android:drawableRight="@mipmap/snackbar_icon_details"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/defender_x_ui_px_38.0"
+        android:paddingRight="@dimen/defender_x_ui_px_40.0"
+        android:text="@string/upload_tips"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="@dimen/defender_font_ui_px_24.0" />
+
+
+</android.support.design.widget.CoordinatorLayout>
