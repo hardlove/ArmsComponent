@@ -6,7 +6,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/defender_y_ui_px_78.0"
+        android:layout_height="@dimen/y_ui_px_78.0"
         android:gravity="center_vertical">
 
         <ImageView
@@ -20,10 +20,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:paddingLeft="@dimen/defender_x_ui_px_18.0"
+            android:paddingLeft="@dimen/x_ui_px_18.0"
             android:text="HP CP5225dn"
             android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/defender_font_ui_px_20.0"/>
+            android:textSize="@dimen/font_ui_px_20.0"/>
 
         <TextView
             android:visibility="gone"
@@ -32,12 +32,12 @@
             android:layout_height="wrap_content"
             android:text="已连接"
             android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/defender_font_ui_px_20.0"/>
+            android:textSize="@dimen/font_ui_px_20.0"/>
         <ProgressBar
             android:visibility="gone"
             android:id="@+id/progressbar"
-            android:layout_width="@dimen/defender_x_ui_px_35.0"
-            android:layout_height="@dimen/defender_x_ui_px_35.0"/>
+            android:layout_width="@dimen/x_ui_px_35.0"
+            android:layout_height="@dimen/x_ui_px_35.0"/>
     </LinearLayout>
 
     <include layout="@layout/gray_line"/>

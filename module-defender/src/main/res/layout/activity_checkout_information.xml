@@ -17,7 +17,7 @@
         app:leftIcon="@mipmap/nav_icon_cancel"
         app:leftTitle="录入检测信息"
         app:rightIcon="@mipmap/nav_icon_confirm"
-        app:titleTextSize="@dimen/defender_font_ui_px_40.0">
+        app:titleTextSize="@dimen/font_ui_px_40.0">
     </com.hardlove.mobiledf.widgets.CustomToolBar>
 
 
@@ -29,10 +29,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:paddingLeft="@dimen/defender_x_ui_px_35.0"
-            android:paddingRight="@dimen/defender_x_ui_px_35.0"
-            android:paddingTop="@dimen/defender_y_ui_px_57.0"
-            android:paddingBottom="@dimen/defender_y_ui_px_67.0"
+            android:paddingLeft="@dimen/x_ui_px_35.0"
+            android:paddingRight="@dimen/x_ui_px_35.0"
+            android:paddingTop="@dimen/y_ui_px_57.0"
+            android:paddingBottom="@dimen/y_ui_px_67.0"
             >
             <!--基本信息-->
             <LinearLayout
@@ -43,21 +43,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:paddingLeft="@dimen/defender_x_ui_px_5.0"
+                    android:paddingLeft="@dimen/x_ui_px_5.0"
                     android:text="基本信息"
                     android:textColor="@color/color_505050"
-                    android:textSize="@dimen/defender_font_ui_px_28.0"
+                    android:textSize="@dimen/font_ui_px_28.0"
                     android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/tv_switch"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawablePadding="@dimen/defender_x_ui_px_10.0"
+                    android:drawablePadding="@dimen/x_ui_px_10.0"
                     android:drawableRight="@mipmap/icon_close"
                     android:text="@string/pack_up"
                     android:textColor="@color/color_3586DA"
-                    android:textSize="@dimen/defender_font_ui_px_28.0"/>
+                    android:textSize="@dimen/font_ui_px_28.0"/>
             </LinearLayout>
 
             <!--检测单位-->
@@ -65,11 +65,11 @@
                 android:id="@+id/tv_company_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/defender_y_ui_px_39.0"
-                android:paddingLeft="@dimen/defender_x_ui_px_5.0"
+                android:layout_marginTop="@dimen/y_ui_px_39.0"
+                android:paddingLeft="@dimen/x_ui_px_5.0"
                 android:text="检测单位"
                 android:textColor="@color/color_BCC1C6"
-                android:textSize="@dimen/defender_font_ui_px_24.0"/>
+                android:textSize="@dimen/font_ui_px_24.0"/>
 
             <android.support.design.widget.TextInputEditText
                 android:id="@+id/edt_company"
@@ -81,11 +81,11 @@
                 android:imeOptions="actionNext"
                 android:inputType="text"
                 android:lines="1"
-                android:paddingLeft="@dimen/defender_x_ui_px_5.0"
-                android:paddingTop="@dimen/defender_y_ui_px_27.0"
+                android:paddingLeft="@dimen/x_ui_px_5.0"
+                android:paddingTop="@dimen/y_ui_px_27.0"
                 tools:text="@string/company"
                 android:textColor="@color/color_090909"
-                android:textSize="@dimen/defender_font_ui_px_28.0"/>
+                android:textSize="@dimen/font_ui_px_28.0"/>
 
             <!--可隐藏部分 start-->
             <LinearLayout
@@ -98,11 +98,11 @@
                     android:id="@+id/tv_person_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/defender_y_ui_px_57.0"
-                    android:paddingLeft="@dimen/defender_x_ui_px_5.0"
+                    android:layout_marginTop="@dimen/y_ui_px_57.0"
+                    android:paddingLeft="@dimen/x_ui_px_5.0"
                     android:text="检测人员"
                     android:textColor="@color/color_BCC1C6"
-                    android:textSize="@dimen/defender_font_ui_px_24.0"/>
+                    android:textSize="@dimen/font_ui_px_24.0"/>
 
                 <android.support.design.widget.TextInputEditText
                     android:id="@+id/edt_person"
@@ -114,22 +114,22 @@
                     android:imeOptions="actionNext"
                     android:inputType="text"
                     android:lines="1"
-                    android:paddingLeft="@dimen/defender_x_ui_px_5.0"
-                    android:paddingTop="@dimen/defender_y_ui_px_27.0"
+                    android:paddingLeft="@dimen/x_ui_px_5.0"
+                    android:paddingTop="@dimen/y_ui_px_27.0"
                     tools:text="李峰"
                     android:textColor="@color/color_090909"
-                    android:textSize="@dimen/defender_font_ui_px_28.0"/>
+                    android:textSize="@dimen/font_ui_px_28.0"/>
 
                 <!--抽样地点-->
                 <TextView
                     android:id="@+id/tv_location_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/defender_y_ui_px_48.0"
-                    android:paddingLeft="@dimen/defender_x_ui_px_5.0"
+                    android:layout_marginTop="@dimen/y_ui_px_48.0"
+                    android:paddingLeft="@dimen/x_ui_px_5.0"
                     android:text="抽样地点"
                     android:textColor="@color/color_BCC1C6"
-                    android:textSize="@dimen/defender_font_ui_px_24.0"/>
+                    android:textSize="@dimen/font_ui_px_24.0"/>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -144,9 +144,9 @@
                         android:imeOptions="actionNext"
                         android:inputType="text"
                         android:lines="1"
-                        android:paddingTop="@dimen/defender_y_ui_px_27.0"
+                        android:paddingTop="@dimen/y_ui_px_27.0"
                         android:textColor="@color/color_090909"
-                        android:textSize="@dimen/defender_font_ui_px_28.0"/>
+                        android:textSize="@dimen/font_ui_px_28.0"/>
 
                     <ImageView
                         android:id="@+id/iv_location"
@@ -154,7 +154,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
-                        android:paddingLeft="@dimen/defender_x_ui_px_15.0"
+                        android:paddingLeft="@dimen/x_ui_px_15.0"
                         android:src="@mipmap/input_icon_location"/>
                 </RelativeLayout>
                 <!--受检对象-->
@@ -162,11 +162,11 @@
                     android:id="@+id/tv_checkObj_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/defender_y_ui_px_35.0"
-                    android:paddingLeft="@dimen/defender_x_ui_px_5.0"
+                    android:layout_marginTop="@dimen/y_ui_px_35.0"
+                    android:paddingLeft="@dimen/x_ui_px_5.0"
                     android:text="受检对象"
                     android:textColor="@color/color_BCC1C6"
-                    android:textSize="@dimen/defender_font_ui_px_24.0"/>
+                    android:textSize="@dimen/font_ui_px_24.0"/>
 
                 <AutoCompleteTextView
                     android:id="@+id/edt_checkObj"
@@ -176,19 +176,19 @@
                     android:imeOptions="actionNext"
                     android:inputType="text"
                     android:lines="1"
-                    android:paddingTop="@dimen/defender_y_ui_px_27.0"
+                    android:paddingTop="@dimen/y_ui_px_27.0"
                     android:textColor="@color/color_090909"
-                    android:textSize="@dimen/defender_font_ui_px_28.0"/>
+                    android:textSize="@dimen/font_ui_px_28.0"/>
                 <!--检测方法-->
                 <TextView
                     android:id="@+id/tv_method_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/defender_y_ui_px_35.0"
-                    android:paddingLeft="@dimen/defender_x_ui_px_5.0"
+                    android:layout_marginTop="@dimen/y_ui_px_35.0"
+                    android:paddingLeft="@dimen/x_ui_px_5.0"
                     android:text="检测方法"
                     android:textColor="@color/color_BCC1C6"
-                    android:textSize="@dimen/defender_font_ui_px_24.0"/>
+                    android:textSize="@dimen/font_ui_px_24.0"/>
 
                 <android.support.design.widget.TextInputEditText
                     android:id="@+id/edt_method"
@@ -198,20 +198,20 @@
                     android:imeOptions="actionNext"
                     android:inputType="text"
                     android:lines="1"
-                    android:paddingTop="@dimen/defender_y_ui_px_27.0"
+                    android:paddingTop="@dimen/y_ui_px_27.0"
                     android:text="拉曼手持光谱"
                     android:textColor="@color/color_090909"
-                    android:textSize="@dimen/defender_font_ui_px_28.0"/>
+                    android:textSize="@dimen/font_ui_px_28.0"/>
                 <!--设备编号-->
                 <TextView
                     android:id="@+id/tv_deviceNo_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/defender_y_ui_px_35.0"
-                    android:paddingLeft="@dimen/defender_x_ui_px_5.0"
+                    android:layout_marginTop="@dimen/y_ui_px_35.0"
+                    android:paddingLeft="@dimen/x_ui_px_5.0"
                     android:text="设备编号"
                     android:textColor="@color/color_BCC1C6"
-                    android:textSize="@dimen/defender_font_ui_px_24.0"/>
+                    android:textSize="@dimen/font_ui_px_24.0"/>
 
                 <AutoCompleteTextView
                     android:id="@+id/edt_device_no"
@@ -221,31 +221,31 @@
                     android:imeOptions="actionNext"
                     android:inputType="text"
                     android:lines="1"
-                    android:paddingTop="@dimen/defender_y_ui_px_27.0"
+                    android:paddingTop="@dimen/y_ui_px_27.0"
                     android:textColor="@color/color_090909"
-                    android:textSize="@dimen/defender_font_ui_px_28.0"/>
+                    android:textSize="@dimen/font_ui_px_28.0"/>
             </LinearLayout>
             <!--可隐藏部分 end-->
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/defender_y_ui_px_54.0"
-                android:paddingLeft="@dimen/defender_x_ui_px_5.0"
+                android:layout_marginTop="@dimen/y_ui_px_54.0"
+                android:paddingLeft="@dimen/x_ui_px_5.0"
                 android:text="测样信息"
                 android:textColor="@color/color_505050"
-                android:textSize="@dimen/defender_font_ui_px_28.0"
+                android:textSize="@dimen/font_ui_px_28.0"
                 android:textStyle="bold"/>
             <!--样品编号-->
             <TextView
                 android:id="@+id/tv_sample_no_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/defender_y_ui_px_35.0"
-                android:paddingLeft="@dimen/defender_x_ui_px_5.0"
+                android:layout_marginTop="@dimen/y_ui_px_35.0"
+                android:paddingLeft="@dimen/x_ui_px_5.0"
                 android:text="样品编号"
                 android:textColor="@color/color_BCC1C6"
-                android:textSize="@dimen/defender_font_ui_px_24.0"/>
+                android:textSize="@dimen/font_ui_px_24.0"/>
 
             <android.support.design.widget.TextInputEditText
                 android:id="@+id/edt_sample_no"
@@ -255,41 +255,41 @@
                 android:imeOptions="actionNext"
                 android:inputType="text"
                 android:lines="1"
-                android:paddingTop="@dimen/defender_y_ui_px_27.0"
+                android:paddingTop="@dimen/y_ui_px_27.0"
                 android:textColor="@color/color_090909"
-                android:textSize="@dimen/defender_font_ui_px_28.0"/>
+                android:textSize="@dimen/font_ui_px_28.0"/>
 
             <!--样品分类-->
             <TextView
                 android:id="@+id/tv_sample_type_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/defender_y_ui_px_35.0"
-                android:paddingLeft="@dimen/defender_x_ui_px_5.0"
+                android:layout_marginTop="@dimen/y_ui_px_35.0"
+                android:paddingLeft="@dimen/x_ui_px_5.0"
                 android:text="@string/sample_type"
                 android:textColor="@color/color_BCC1C6"
-                android:textSize="@dimen/defender_font_ui_px_24.0"/>
+                android:textSize="@dimen/font_ui_px_24.0"/>
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="@dimen/defender_y_ui_px_27.0">
+                android:paddingTop="@dimen/y_ui_px_27.0">
 
                 <TextView
                     android:id="@+id/tv_sample_type"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:paddingLeft="@dimen/defender_x_ui_px_5.0"
+                    android:paddingLeft="@dimen/x_ui_px_5.0"
                     android:hint="请点击选择样品分类"
                     android:textColor="@color/color_090909"
-                    android:textSize="@dimen/defender_font_ui_px_28.0"/>
+                    android:textSize="@dimen/font_ui_px_28.0"/>
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="@dimen/defender_x_ui_px_15.0"
+                    android:paddingLeft="@dimen/x_ui_px_15.0"
                     android:src="@mipmap/input_icon_details"/>
             </LinearLayout>
 
@@ -301,11 +301,11 @@
                 android:id="@+id/tv_sample_name_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/defender_y_ui_px_35.0"
-                android:paddingLeft="@dimen/defender_x_ui_px_5.0"
+                android:layout_marginTop="@dimen/y_ui_px_35.0"
+                android:paddingLeft="@dimen/x_ui_px_5.0"
                 android:text="@string/sample_name"
                 android:textColor="@color/color_BCC1C6"
-                android:textSize="@dimen/defender_font_ui_px_24.0"/>
+                android:textSize="@dimen/font_ui_px_24.0"/>
 
             <android.support.design.widget.TextInputEditText
                 android:id="@+id/edt_sample_name"
@@ -315,9 +315,9 @@
                 android:imeOptions="actionNext"
                 android:inputType="text"
                 android:lines="1"
-                android:paddingTop="@dimen/defender_y_ui_px_27.0"
+                android:paddingTop="@dimen/y_ui_px_27.0"
                 android:textColor="@color/color_090909"
-                android:textSize="@dimen/defender_font_ui_px_28.0"/>
+                android:textSize="@dimen/font_ui_px_28.0"/>
 
 
             <!--检测项目-->
@@ -325,53 +325,53 @@
                 android:id="@+id/tv_check_project_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/defender_y_ui_px_35.0"
-                android:paddingLeft="@dimen/defender_x_ui_px_5.0"
+                android:layout_marginTop="@dimen/y_ui_px_35.0"
+                android:paddingLeft="@dimen/x_ui_px_5.0"
                 android:text="@string/check_project"
                 android:textColor="@color/color_BCC1C6"
-                android:textSize="@dimen/defender_font_ui_px_24.0"/>
+                android:textSize="@dimen/font_ui_px_24.0"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:paddingBottom="@dimen/defender_y_ui_px_7.0"
-                android:paddingTop="@dimen/defender_y_ui_px_27.0">
+                android:paddingBottom="@dimen/y_ui_px_7.0"
+                android:paddingTop="@dimen/y_ui_px_27.0">
 
                 <TextView
                     android:id="@+id/tv_check_project"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="@dimen/defender_x_ui_px_60.0"
+                    android:layout_marginRight="@dimen/x_ui_px_60.0"
                     android:layout_weight="1"
                     android:drawableRight="@mipmap/input_icon_details"
                     android:hint="请点击选择检测项目"
                     android:imeOptions="actionNext"
                     android:inputType="text"
                     android:lines="1"
-                    android:paddingLeft="@dimen/defender_x_ui_px_5.0"
+                    android:paddingLeft="@dimen/x_ui_px_5.0"
                     android:textColor="@color/color_090909"
 
-                    android:textSize="@dimen/defender_font_ui_px_28.0"/>
+                    android:textSize="@dimen/font_ui_px_28.0"/>
 
-                <com.hardlove.mobiledf.widgets.StateButton
+                <com.hardlove.cl.fooddefender.widgets.StateButton
                     android:id="@+id/btn_check_method"
                     android:layout_width="wrap_content"
-                    android:layout_height="@dimen/defender_y_ui_px_60.0"
+                    android:layout_height="@dimen/y_ui_px_60.0"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginBottom="@dimen/defender_y_ui_px_0.0"
+                    android:layout_marginBottom="@dimen/y_ui_px_0.0"
                     android:enabled="false"
                     android:gravity="center"
 
-                    android:minWidth="@dimen/defender_x_ui_px_140.0"
-                    android:padding="@dimen/defender_y_ui_px_0.0"
+                    android:minWidth="@dimen/x_ui_px_140.0"
+                    android:padding="@dimen/y_ui_px_0.0"
                     android:text="检测方法"
                     android:textColor="@color/color_FFFFFF"
-                    android:textSize="@dimen/defender_font_ui_px_24.0"
+                    android:textSize="@dimen/font_ui_px_24.0"
                     app:normalBackgroundColor="@color/colorPrimary"
                     app:pressedBackgroundColor="@color/colorPrimary"
-                    app:radius="@dimen/defender_x_ui_px_4.0"
+                    app:radius="@dimen/x_ui_px_4.0"
                     app:unableBackgroundColor="@color/color_BCC1C6"/>
             </LinearLayout>
 
@@ -382,11 +382,11 @@
                 android:id="@+id/tv_file_name_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/defender_y_ui_px_35.0"
-                android:paddingLeft="@dimen/defender_x_ui_px_5.0"
+                android:layout_marginTop="@dimen/y_ui_px_35.0"
+                android:paddingLeft="@dimen/x_ui_px_5.0"
                 android:text="@string/file_name"
                 android:textColor="@color/color_BCC1C6"
-                android:textSize="@dimen/defender_font_ui_px_24.0"/>
+                android:textSize="@dimen/font_ui_px_24.0"/>
 
             <android.support.design.widget.TextInputEditText
                 android:id="@+id/edt_file_name"
@@ -396,9 +396,9 @@
                 android:imeOptions="actionNext"
                 android:inputType="text"
                 android:lines="1"
-                android:paddingTop="@dimen/defender_y_ui_px_27.0"
+                android:paddingTop="@dimen/y_ui_px_27.0"
                 android:textColor="@color/color_090909"
-                android:textSize="@dimen/defender_font_ui_px_28.0"/>
+                android:textSize="@dimen/font_ui_px_28.0"/>
 
 
             <!--其它信息-->
@@ -406,10 +406,10 @@
                 android:id="@+id/tv_other_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/defender_y_ui_px_35.0"
-                android:paddingLeft="@dimen/defender_x_ui_px_5.0"
+                android:layout_marginTop="@dimen/y_ui_px_35.0"
+                android:paddingLeft="@dimen/x_ui_px_5.0"
                 android:text="其它信息"
-                android:textSize="@dimen/defender_font_ui_px_24.0"/>
+                android:textSize="@dimen/font_ui_px_24.0"/>
 
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/text_layout_other"
@@ -426,7 +426,7 @@
                     android:hint="请点击输入备注信息。如样品生产日期/编号"
                     android:inputType="textMultiLine"
                     android:textColor="@color/color_090909"
-                    android:textSize="@dimen/defender_font_ui_px_28.0"/>
+                    android:textSize="@dimen/font_ui_px_28.0"/>
             </android.support.design.widget.TextInputLayout>
 
 
@@ -435,12 +435,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/defender_y_ui_px_44.0"
+                android:layout_marginTop="@dimen/y_ui_px_44.0"
                 android:layout_weight="1"
-                android:paddingLeft="@dimen/defender_x_ui_px_4.0"
+                android:paddingLeft="@dimen/x_ui_px_4.0"
                 android:text="上传相应图片"
                 android:textColor="@color/color_090909"
-                android:textSize="@dimen/defender_font_ui_px_28.0"
+                android:textSize="@dimen/font_ui_px_28.0"
                 android:textStyle="bold"/>
 
             <android.support.v7.widget.RecyclerView
@@ -448,7 +448,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="@dimen/defender_y_ui_px_25.0"
+                android:layout_marginTop="@dimen/y_ui_px_25.0"
                 android:background="@color/color_FFFFFF">
             </android.support.v7.widget.RecyclerView>
 

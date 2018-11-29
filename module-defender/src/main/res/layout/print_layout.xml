@@ -7,10 +7,10 @@
     android:layout_height="wrap_content"
     android:background="@color/color_FFFFFF"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/defender_y_ui_px_67.0"
-    android:paddingLeft="@dimen/defender_x_ui_px_37.0"
-    android:paddingRight="@dimen/defender_x_ui_px_37.0"
-    android:paddingTop="@dimen/defender_y_ui_px_67.0">
+    android:paddingBottom="@dimen/y_ui_px_67.0"
+    android:paddingLeft="@dimen/x_ui_px_37.0"
+    android:paddingRight="@dimen/x_ui_px_37.0"
+    android:paddingTop="@dimen/y_ui_px_67.0">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,10 +20,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:paddingLeft="@dimen/defender_x_ui_px_4.0"
+            android:paddingLeft="@dimen/x_ui_px_4.0"
             android:text="受检对象"
             android:textColor="@color/color_000000"
-            android:textSize="@dimen/defender_font_ui_px_36.0"
+            android:textSize="@dimen/font_ui_px_36.0"
             android:textStyle="bold"/>
     </LinearLayout>
 
@@ -43,20 +43,20 @@
             android:imeOptions="actionNext"
             android:inputType="text"
             android:lines="1"
-            android:paddingTop="@dimen/defender_y_ui_px_27.0"
+            android:paddingTop="@dimen/y_ui_px_27.0"
             android:textColor="@color/color_000000"
-            android:textSize="@dimen/defender_font_ui_px_36.0"/>
+            android:textSize="@dimen/font_ui_px_36.0"/>
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/defender_y_ui_px_44.0"
+            android:layout_marginTop="@dimen/y_ui_px_44.0"
             android:layout_weight="1"
-            android:paddingLeft="@dimen/defender_x_ui_px_4.0"
+            android:paddingLeft="@dimen/x_ui_px_4.0"
             android:text="抽样地点"
             android:textColor="@color/color_000000"
-            android:textSize="@dimen/defender_font_ui_px_36.0"
+            android:textSize="@dimen/font_ui_px_36.0"
             android:textStyle="bold"/>
 
         <TextView
@@ -64,21 +64,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:lines="1"
-            android:paddingTop="@dimen/defender_y_ui_px_27.0"
+            android:paddingTop="@dimen/y_ui_px_27.0"
             android:text="上海市浦东新区新金桥路27号"
             android:textColor="@color/color_000000"
-            android:textSize="@dimen/defender_font_ui_px_36.0"/>
+            android:textSize="@dimen/font_ui_px_36.0"/>
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/defender_y_ui_px_44.0"
+            android:layout_marginTop="@dimen/y_ui_px_44.0"
             android:layout_weight="1"
-            android:paddingLeft="@dimen/defender_x_ui_px_4.0"
+            android:paddingLeft="@dimen/x_ui_px_4.0"
             android:text="样品分类"
             android:textColor="@color/color_000000"
-            android:textSize="@dimen/defender_font_ui_px_36.0"
+            android:textSize="@dimen/font_ui_px_36.0"
             android:textStyle="bold"/>
 
         <TextView
@@ -86,20 +86,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:lines="1"
-            android:paddingTop="@dimen/defender_y_ui_px_27.0"
+            android:paddingTop="@dimen/y_ui_px_27.0"
             android:text="牛奶"
             android:textColor="@color/color_000000"
-            android:textSize="@dimen/defender_font_ui_px_36.0"/>
+            android:textSize="@dimen/font_ui_px_36.0"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/defender_y_ui_px_44.0"
+            android:layout_marginTop="@dimen/y_ui_px_44.0"
             android:layout_weight="1"
-            android:paddingLeft="@dimen/defender_x_ui_px_4.0"
+            android:paddingLeft="@dimen/x_ui_px_4.0"
             android:text="检测项目"
             android:textColor="@color/color_000000"
-            android:textSize="@dimen/defender_font_ui_px_36.0"
+            android:textSize="@dimen/font_ui_px_36.0"
             android:textStyle="bold"/>
 
         <TextView
@@ -107,21 +107,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:lines="1"
-            android:paddingTop="@dimen/defender_y_ui_px_27.0"
+            android:paddingTop="@dimen/y_ui_px_27.0"
             android:text="三聚氰胺"
             android:textColor="@color/color_000000"
-            android:textSize="@dimen/defender_font_ui_px_36.0"/>
+            android:textSize="@dimen/font_ui_px_36.0"/>
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/defender_y_ui_px_44.0"
+            android:layout_marginTop="@dimen/y_ui_px_44.0"
             android:layout_weight="1"
-            android:paddingLeft="@dimen/defender_x_ui_px_4.0"
+            android:paddingLeft="@dimen/x_ui_px_4.0"
             android:text="检测时间"
             android:textColor="@color/color_000000"
-            android:textSize="@dimen/defender_font_ui_px_36.0"
+            android:textSize="@dimen/font_ui_px_36.0"
             android:textStyle="bold"/>
 
         <TextView
@@ -129,21 +129,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:lines="1"
-            android:paddingTop="@dimen/defender_y_ui_px_27.0"
+            android:paddingTop="@dimen/y_ui_px_27.0"
             android:text="2017-05-02 11：02：34"
             android:textColor="@color/color_000000"
-            android:textSize="@dimen/defender_font_ui_px_36.0"/>
+            android:textSize="@dimen/font_ui_px_36.0"/>
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/defender_y_ui_px_44.0"
+            android:layout_marginTop="@dimen/y_ui_px_44.0"
             android:layout_weight="1"
-            android:paddingLeft="@dimen/defender_x_ui_px_4.0"
+            android:paddingLeft="@dimen/x_ui_px_4.0"
             android:text="检测结果"
             android:textColor="@color/color_000000"
-            android:textSize="@dimen/defender_font_ui_px_36.0"
+            android:textSize="@dimen/font_ui_px_36.0"
             android:textStyle="bold"/>
 
         <TextView
@@ -151,16 +151,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:lines="1"
-            android:paddingTop="@dimen/defender_y_ui_px_27.0"
+            android:paddingTop="@dimen/y_ui_px_27.0"
             android:text="苏丹红；三聚氰胺"
             android:textColor="@color/color_000000"
-            android:textSize="@dimen/defender_font_ui_px_36.0"/>
+            android:textSize="@dimen/font_ui_px_36.0"/>
 
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="@dimen/defender_y_ui_px_33.0">
+            android:paddingTop="@dimen/y_ui_px_33.0">
 
             <TextView
                 android:id="@+id/tv_t1"
@@ -168,18 +168,18 @@
                 android:layout_height="wrap_content"
                 android:text="判定结果"
                 android:textColor="@color/color_000000"
-                android:textSize="@dimen/defender_font_ui_px_36.0"
+                android:textSize="@dimen/font_ui_px_36.0"
                 android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/tv_t2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/defender_x_ui_px_128.0"
+                android:layout_marginLeft="@dimen/x_ui_px_128.0"
                 android:layout_toRightOf="@id/tv_t1"
                 android:text="设备编号"
                 android:textColor="@color/color_000000"
-                android:textSize="@dimen/defender_font_ui_px_36.0"
+                android:textSize="@dimen/font_ui_px_36.0"
                 android:textStyle="bold"/>
 
             <TextView
@@ -187,10 +187,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_t1"
-                android:layout_marginTop="@dimen/defender_y_ui_px_27.0"
+                android:layout_marginTop="@dimen/y_ui_px_27.0"
                 android:text="检出"
                 android:textColor="@color/color_000000"
-                android:textSize="@dimen/defender_font_ui_px_36.0"/>
+                android:textSize="@dimen/font_ui_px_36.0"/>
 
             <TextView
                 android:id="@+id/tv_deviceNo"
@@ -198,10 +198,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignLeft="@id/tv_t2"
                 android:layout_below="@id/tv_t1"
-                android:layout_marginTop="@dimen/defender_y_ui_px_27.0"
+                android:layout_marginTop="@dimen/y_ui_px_27.0"
                 android:text="2342344"
                 android:textColor="@color/color_000000"
-                android:textSize="@dimen/defender_font_ui_px_36.0"/>
+                android:textSize="@dimen/font_ui_px_36.0"/>
 
         </RelativeLayout>
 
@@ -209,12 +209,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/defender_y_ui_px_44.0"
+            android:layout_marginTop="@dimen/y_ui_px_44.0"
             android:layout_weight="1"
-            android:paddingLeft="@dimen/defender_x_ui_px_4.0"
+            android:paddingLeft="@dimen/x_ui_px_4.0"
             android:text="样品编号"
             android:textColor="@color/color_000000"
-            android:textSize="@dimen/defender_font_ui_px_36.0"
+            android:textSize="@dimen/font_ui_px_36.0"
             android:textStyle="bold"/>
 
         <EditText
@@ -223,32 +223,32 @@
             android:layout_height="wrap_content"
             android:hint="请输入样品编号"
             android:lines="1"
-            android:paddingTop="@dimen/defender_y_ui_px_27.0"
+            android:paddingTop="@dimen/y_ui_px_27.0"
             android:textColor="@color/color_000000"
-            android:textSize="@dimen/defender_font_ui_px_36.0"/>
+            android:textSize="@dimen/font_ui_px_36.0"/>
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/defender_y_ui_px_44.0"
+            android:layout_marginTop="@dimen/y_ui_px_44.0"
             android:layout_weight="1"
-            android:paddingLeft="@dimen/defender_x_ui_px_4.0"
+            android:paddingLeft="@dimen/x_ui_px_4.0"
             android:text="结果附件"
             android:textColor="@color/color_000000"
-            android:textSize="@dimen/defender_font_ui_px_36.0"
+            android:textSize="@dimen/font_ui_px_36.0"
             android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/tv_accessoryFile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/defender_y_ui_px_27.0"
+            android:layout_marginTop="@dimen/y_ui_px_27.0"
             android:drawableRight="@mipmap/icon_attachmen"
             android:lines="1"
             android:text="扫描001.jpg"
             android:textColor="@color/color_000000"
-            android:textSize="@dimen/defender_font_ui_px_36.0"/>
+            android:textSize="@dimen/font_ui_px_36.0"/>
 
     </LinearLayout>
 
@@ -258,12 +258,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/defender_y_ui_px_44.0"
+        android:layout_marginTop="@dimen/y_ui_px_44.0"
         android:layout_weight="1"
-        android:paddingLeft="@dimen/defender_x_ui_px_4.0"
+        android:paddingLeft="@dimen/x_ui_px_4.0"
         android:text="其它信息"
         android:textColor="@color/color_000000"
-        android:textSize="@dimen/defender_font_ui_px_36.0"
+        android:textSize="@dimen/font_ui_px_36.0"
         android:textStyle="bold"/>
 
     <android.support.design.widget.TextInputLayout
@@ -276,21 +276,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:paddingTop="@dimen/defender_y_ui_px_27.0"
+            android:paddingTop="@dimen/y_ui_px_27.0"
             android:textColor="@color/color_000000"
-            android:textSize="@dimen/defender_font_ui_px_36.0"/>
+            android:textSize="@dimen/font_ui_px_36.0"/>
     </android.support.design.widget.TextInputLayout>
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/defender_y_ui_px_44.0"
+        android:layout_marginTop="@dimen/y_ui_px_44.0"
         android:layout_weight="1"
-        android:paddingLeft="@dimen/defender_x_ui_px_4.0"
+        android:paddingLeft="@dimen/x_ui_px_4.0"
         android:text="上传相应图片"
         android:textColor="@color/color_000000"
-        android:textSize="@dimen/defender_font_ui_px_36.0"
+        android:textSize="@dimen/font_ui_px_36.0"
         android:textStyle="bold"/>
 
     <android.support.v7.widget.RecyclerView
@@ -298,7 +298,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/defender_y_ui_px_25.0">
+        android:layout_marginTop="@dimen/y_ui_px_25.0">
 
     </android.support.v7.widget.RecyclerView>
 

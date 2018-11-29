@@ -18,28 +18,23 @@ package me.jessyan.armscomponent.commonsdk.core;
 import android.app.Application;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 
-import com.alibaba.android.arouter.launcher.ARouter;
 import com.jess.arms.base.delegate.AppLifecycles;
 import com.jess.arms.di.module.ClientModule;
 import com.jess.arms.di.module.GlobalConfigModule;
 import com.jess.arms.http.log.RequestInterceptor;
 import com.jess.arms.integration.ConfigModule;
-import com.mob.MobSDK;
 
 import java.util.List;
 
-import butterknife.ButterKnife;
 import me.jessyan.armscomponent.commonsdk.BuildConfig;
 import me.jessyan.armscomponent.commonsdk.http.Api;
 import me.jessyan.armscomponent.commonsdk.http.SSLSocketClient;
 import me.jessyan.armscomponent.commonsdk.imgaEngine.Strategy.CommonGlideImageLoaderStrategy;
 import me.jessyan.retrofiturlmanager.RetrofitUrlManager;
 import okhttp3.OkHttpClient;
-import timber.log.Timber;
 
 
 /**
@@ -54,12 +49,9 @@ import timber.log.Timber;
  */
 public class GlobalConfiguration implements ConfigModule {
 
-    public static Context application;
 
     @Override
     public void applyOptions(Context context, GlobalConfigModule.Builder builder) {
-        application = context.getApplicationContext();
-
         if (!BuildConfig.LOG_DEBUG) //Release 时,让框架不再打印 Http 请求和响应的信息
             builder.printHttpLogLevel(RequestInterceptor.Level.NONE);
         builder.baseurl(Api.APP_DOMAIN)
@@ -89,34 +81,7 @@ public class GlobalConfiguration implements ConfigModule {
     @Override
     public void injectAppLifecycle(Context context, List<AppLifecycles> lifecycles) {
         // AppDelegate.Lifecycle 的所有方法都会在基类Application对应的生命周期中被调用,所以在对应的方法中可以扩展一些自己需要的逻辑
-        lifecycles.add(new AppLifecycles() {
-
-            @Override
-            public void attachBaseContext(@NonNull Context base) {
-
-
-            }
-
-            @Override
-            public void onCreate(@NonNull Application application) {
-                if (BuildConfig.LOG_DEBUG) {//Timber日志打印
-                    Timber.plant(new Timber.DebugTree());
-                    ButterKnife.setDebug(true);
-                    ARouter.openLog();     // 打印日志
-                    ARouter.openDebug();   // 开启调试模式(如果在InstantRun模式下运行，必须开启调试模式！线上版本需要关闭,否则有安全风险)
-                    RetrofitUrlManager.getInstance().setDebug(true);
-                }
-                ARouter.init(application); // 尽可能早,推荐在Application中初始化
-
-                MobSDK.init(application, "288cd81f31bf8", "70b8425b3005294dd1ab489d0108775f");
-
-            }
-
-            @Override
-            public void onTerminate(@NonNull Application application) {
-
-            }
-        });
+        lifecycles.add(new AppLifecyclesImpl());
     }
 
     @Override

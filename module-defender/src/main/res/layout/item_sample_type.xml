@@ -8,35 +8,35 @@
               android:layout_gravity="center"
     >
 
-    <com.hardlove.mobiledf.widgets.StateButton
+    <com.hardlove.cl.fooddefender.widgets.StateButton
         android:id="@+id/stb_item"
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/defender_y_ui_px_60.0"
+        android:layout_height="@dimen/y_ui_px_60.0"
         android:clickable="false"
         android:gravity="center"
         android:paddingTop="0dp"
         android:paddingBottom="0dp"
-        android:paddingLeft="@dimen/defender_x_ui_px_25.0"
-        android:paddingRight="@dimen/defender_x_ui_px_25.0"
+        android:paddingLeft="@dimen/x_ui_px_25.0"
+        android:paddingRight="@dimen/x_ui_px_25.0"
         android:shadowColor="@android:color/transparent"
         android:text="粮食及粮食制品"
-        android:textSize="@dimen/defender_font_ui_px_28.0"
+        android:textSize="@dimen/font_ui_px_28.0"
 
         app:normalBackgroundColor="@color/color_FFFFFF"
         app:normalStrokeColor="@color/color_BCC1C6"
-        app:normalStrokeWidth="@dimen/defender_x_ui_px_1.0"
+        app:normalStrokeWidth="@dimen/x_ui_px_1.0"
 
         app:normalTextColor="@color/color_505050"
         app:pressedBackgroundColor="@color/colorPrimary"
         app:pressedStrokeColor="@color/colorPrimary"
 
-        app:pressedStrokeWidth="@dimen/defender_x_ui_px_1.0"
+        app:pressedStrokeWidth="@dimen/x_ui_px_1.0"
         app:pressedTextColor="@color/color_FFFFFF"
         app:round="true"
 
         app:unableBackgroundColor="@color/color_FFFFFF"
         app:unableStrokeColor="@color/color_BCC1C6"
-        app:unableStrokeWidth="@dimen/defender_x_ui_px_1.0"
+        app:unableStrokeWidth="@dimen/x_ui_px_1.0"
         app:unableTextColor="@color/color_505050"
 
         />

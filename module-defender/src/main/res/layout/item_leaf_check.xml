@@ -10,7 +10,7 @@
         android:id="@+id/radioBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/defender_x_ui_px_43.0"
+        android:layout_marginLeft="@dimen/x_ui_px_43.0"
         />
 
     <TextView
@@ -18,9 +18,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
-        android:paddingBottom="@dimen/defender_y_ui_px_30.0"
-        android:paddingLeft="@dimen/defender_x_ui_px_51.0"
-        android:paddingTop="@dimen/defender_y_ui_px_30.0"
+        android:paddingBottom="@dimen/y_ui_px_30.0"
+        android:paddingLeft="@dimen/x_ui_px_51.0"
+        android:paddingTop="@dimen/y_ui_px_30.0"
         android:text="酸性色素"
         android:textColor="@drawable/item_font_left_selector_bg" />
 

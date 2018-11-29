@@ -22,11 +22,11 @@
         android:layout_gravity="center"
         android:background="@color/colorPrimary"
         android:orientation="horizontal"
-        android:paddingLeft="@dimen/defender_x_ui_px_73.0"
+        android:paddingLeft="@dimen/x_ui_px_73.0"
         >
 
         <ImageView
-            android:paddingTop="@dimen/defender_y_ui_px_21.0"
+            android:paddingTop="@dimen/y_ui_px_21.0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -36,11 +36,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="@dimen/defender_x_ui_px_33.0"
-            android:lineSpacingExtra="@dimen/defender_y_ui_px_16.0"
+            android:layout_marginLeft="@dimen/x_ui_px_33.0"
+            android:lineSpacingExtra="@dimen/y_ui_px_16.0"
             android:text="您好，欢迎使用Food Defender\n 已为您定制如下内容"
             android:textColor="@color/color_FFFFFF"
-            android:textSize="@dimen/defender_font_ui_px_28.0"/>
+            android:textSize="@dimen/font_ui_px_28.0"/>
 
     </LinearLayout>
 
@@ -49,11 +49,11 @@
         android:layout_height="wrap_content">
 
         <View
-            android:layout_width="@dimen/defender_x_ui_px_5.0"
-            android:layout_height="@dimen/defender_y_ui_px_31.0"
+            android:layout_width="@dimen/x_ui_px_5.0"
+            android:layout_height="@dimen/y_ui_px_31.0"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="@dimen/defender_x_ui_px_40.0"
-            android:layout_marginRight="@dimen/defender_font_ui_px_22.0"
+            android:layout_marginLeft="@dimen/x_ui_px_40.0"
+            android:layout_marginRight="@dimen/font_ui_px_22.0"
             android:background="@color/colorPrimary"/>
 
         <TextView
@@ -63,7 +63,7 @@
             android:layout_weight="1"
             android:text="常见问题"
             android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/defender_font_ui_px_28.0"
+            android:textSize="@dimen/font_ui_px_28.0"
             android:textStyle="bold"/>
 
         <Button
@@ -74,119 +74,119 @@
             android:onClick="onClick"
             android:text="查看"
             android:textColor="@color/color_84878D"
-            android:textSize="@dimen/defender_font_ui_px_28.0"
+            android:textSize="@dimen/font_ui_px_28.0"
             android:textStyle="bold"/>
     </LinearLayout>
 
     <include
         layout="@layout/gray_line"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/defender_y_ui_px_2.0"
-        android:layout_marginLeft="@dimen/defender_x_ui_px_40.0"
-        android:layout_marginRight="@dimen/defender_x_ui_px_31.0"
+        android:layout_height="@dimen/y_ui_px_2.0"
+        android:layout_marginLeft="@dimen/x_ui_px_40.0"
+        android:layout_marginRight="@dimen/x_ui_px_31.0"
         />
 
     <Button
         android:id="@+id/btn_1"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/defender_y_ui_px_86.0"
-        android:layout_marginLeft="@dimen/defender_x_ui_px_41.0"
+        android:layout_height="@dimen/y_ui_px_86.0"
+        android:layout_marginLeft="@dimen/x_ui_px_41.0"
         android:background="?android:selectableItemBackground"
         android:gravity="left|center_vertical"
         android:onClick="onClick"
         android:padding="0dp"
         android:text="如何录入检测信息？"
         android:textColor="@color/color_090909"
-        android:textSize="@dimen/defender_font_ui_px_28.0"/>
+        android:textSize="@dimen/font_ui_px_28.0"/>
 
     <Button
         android:id="@+id/btn_2"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/defender_y_ui_px_86.0"
-        android:layout_marginLeft="@dimen/defender_x_ui_px_41.0"
+        android:layout_height="@dimen/y_ui_px_86.0"
+        android:layout_marginLeft="@dimen/x_ui_px_41.0"
         android:background="?android:selectableItemBackground"
         android:gravity="left|center_vertical"
         android:onClick="onClick"
         android:padding="0dp"
         android:text="如何同步检测结果到手机？"
         android:textColor="@color/color_090909"
-        android:textSize="@dimen/defender_font_ui_px_28.0"/>
+        android:textSize="@dimen/font_ui_px_28.0"/>
 
     <Button
         android:id="@+id/btn_3"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/defender_y_ui_px_86.0"
-        android:layout_marginLeft="@dimen/defender_x_ui_px_41.0"
+        android:layout_height="@dimen/y_ui_px_86.0"
+        android:layout_marginLeft="@dimen/x_ui_px_41.0"
         android:background="?android:selectableItemBackground"
         android:gravity="left|center_vertical"
         android:onClick="onClick"
         android:padding="0dp"
         android:text="同步检测结果到手机失败怎么办？"
         android:textColor="@color/color_090909"
-        android:textSize="@dimen/defender_font_ui_px_28.0"/>
+        android:textSize="@dimen/font_ui_px_28.0"/>
 
     <Button
         android:id="@+id/btn_4"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/defender_y_ui_px_86.0"
-        android:layout_marginLeft="@dimen/defender_x_ui_px_41.0"
+        android:layout_height="@dimen/y_ui_px_86.0"
+        android:layout_marginLeft="@dimen/x_ui_px_41.0"
         android:background="?android:selectableItemBackground"
         android:gravity="left|center_vertical"
         android:onClick="onClick"
         android:padding="0dp"
         android:text="如何补充检测结果信息？"
         android:textColor="@color/color_090909"
-        android:textSize="@dimen/defender_font_ui_px_28.0"/>
+        android:textSize="@dimen/font_ui_px_28.0"/>
 
     <Button
         android:id="@+id/btn_5"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/defender_y_ui_px_86.0"
-        android:layout_marginLeft="@dimen/defender_x_ui_px_41.0"
+        android:layout_height="@dimen/y_ui_px_86.0"
+        android:layout_marginLeft="@dimen/x_ui_px_41.0"
         android:background="?android:selectableItemBackground"
         android:gravity="left|center_vertical"
         android:onClick="onClick"
         android:padding="0dp"
         android:text="如何上传检测结果？"
         android:textColor="@color/color_090909"
-        android:textSize="@dimen/defender_font_ui_px_28.0"/>
+        android:textSize="@dimen/font_ui_px_28.0"/>
 
     <Button
         android:id="@+id/btn_6"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/defender_y_ui_px_86.0"
-        android:layout_marginLeft="@dimen/defender_x_ui_px_41.0"
+        android:layout_height="@dimen/y_ui_px_86.0"
+        android:layout_marginLeft="@dimen/x_ui_px_41.0"
         android:background="?android:selectableItemBackground"
         android:gravity="left|center_vertical"
         android:onClick="onClick"
         android:padding="0dp"
         android:text="如何查看历史检测结果？"
         android:textColor="@color/color_090909"
-        android:textSize="@dimen/defender_font_ui_px_28.0"/>
+        android:textSize="@dimen/font_ui_px_28.0"/>
 
     <Button
         android:id="@+id/btn_7"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/defender_y_ui_px_86.0"
-        android:layout_marginLeft="@dimen/defender_x_ui_px_41.0"
+        android:layout_height="@dimen/y_ui_px_86.0"
+        android:layout_marginLeft="@dimen/x_ui_px_41.0"
         android:background="?android:selectableItemBackground"
         android:gravity="left|center_vertical"
         android:onClick="onClick"
         android:padding="0dp"
         android:text="如何查看统计分析结果？"
         android:textColor="@color/color_090909"
-        android:textSize="@dimen/defender_font_ui_px_28.0"/>
+        android:textSize="@dimen/font_ui_px_28.0"/>
 
     <Button
         android:id="@+id/btn_8"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/defender_y_ui_px_86.0"
-        android:layout_marginLeft="@dimen/defender_x_ui_px_41.0"
+        android:layout_height="@dimen/y_ui_px_86.0"
+        android:layout_marginLeft="@dimen/x_ui_px_41.0"
         android:background="?android:selectableItemBackground"
         android:gravity="left|center_vertical"
         android:onClick="onClick"
         android:padding="0dp"
         android:text="如何对APP提供意见反馈？"
         android:textColor="@color/color_090909"
-        android:textSize="@dimen/defender_font_ui_px_28.0"/>
+        android:textSize="@dimen/font_ui_px_28.0"/>
 </LinearLayout>

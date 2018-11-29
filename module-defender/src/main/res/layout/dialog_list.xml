@@ -4,19 +4,19 @@
     android:layout_height="match_parent"
     android:background="@color/color_FFFFFF"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/defender_y_ui_px_36.0"
-    android:paddingLeft="@dimen/defender_x_ui_px_59.0"
-    android:paddingRight="@dimen/defender_x_ui_px_59.0"
-    android:paddingTop="@dimen/defender_y_ui_px_45.0">
+    android:paddingBottom="@dimen/y_ui_px_36.0"
+    android:paddingLeft="@dimen/x_ui_px_59.0"
+    android:paddingRight="@dimen/x_ui_px_59.0"
+    android:paddingTop="@dimen/y_ui_px_45.0">
 
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/defender_y_ui_px_24.0"
+        android:layout_marginBottom="@dimen/y_ui_px_24.0"
         android:text="统计周期"
         android:textColor="@color/color_1F1F1F"
-        android:textSize="@dimen/defender_font_ui_px_36.0" />
+        android:textSize="@dimen/font_ui_px_36.0" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
@@ -26,14 +26,14 @@
     </android.support.v7.widget.RecyclerView>
 
     <TextView
-        android:padding="@dimen/defender_x_ui_px_15.0"
+        android:padding="@dimen/x_ui_px_15.0"
         android:id="@+id/tv_cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:layout_marginTop="@dimen/defender_y_ui_px_49.0"
+        android:layout_marginTop="@dimen/y_ui_px_49.0"
         android:text="取消"
         android:textColor="@color/colorPrimary"
-        android:textSize="@dimen/defender_font_ui_px_28.0" />
+        android:textSize="@dimen/font_ui_px_28.0" />
 
 </LinearLayout>

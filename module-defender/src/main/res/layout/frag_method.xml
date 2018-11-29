@@ -16,7 +16,7 @@
         android:id="@+id/detectMethod"
         android:clickable="true"
         android:background="@mipmap/test_method_bd"
-        android:layout_marginTop="@dimen/defender_y_ui_px_21.0"
+        android:layout_marginTop="@dimen/y_ui_px_21.0"
         android:layout_width="match_parent"
         android:layout_weight="1"
         android:layout_height="0px">
@@ -27,10 +27,10 @@
             android:layout_height="match_parent"/>
         <TextView
             android:visibility="gone"
-            android:layout_marginBottom="@dimen/defender_y_ui_px_30.0"
-            android:layout_marginTop="@dimen/defender_y_ui_px_110.0"
+            android:layout_marginBottom="@dimen/y_ui_px_30.0"
+            android:layout_marginTop="@dimen/y_ui_px_110.0"
             android:layout_gravity="center_horizontal"
-            android:textSize="@dimen/defender_font_ui_px_40.0"
+            android:textSize="@dimen/font_ui_px_40.0"
             android:textColor="@color/color_FFFFFF"
             android:text="@string/method_detection"
             android:layout_width="wrap_content"
@@ -38,9 +38,9 @@
         <TextView
             android:visibility="gone"
             android:text=""
-            android:layout_marginTop="@dimen/defender_y_ui_px_179.0"
-            android:layout_marginRight="@dimen/defender_x_ui_px_25.0"
-            android:layout_marginLeft="@dimen/defender_x_ui_px_90.0"
+            android:layout_marginTop="@dimen/y_ui_px_179.0"
+            android:layout_marginRight="@dimen/x_ui_px_25.0"
+            android:layout_marginLeft="@dimen/x_ui_px_90.0"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </FrameLayout>
@@ -48,8 +48,8 @@
     <FrameLayout
         android:id="@+id/projectMethod"
         android:background="@mipmap/project_information_bd"
-        android:layout_marginTop="@dimen/defender_y_ui_px_21.0"
-        android:layout_marginBottom="@dimen/defender_y_ui_px_43.0"
+        android:layout_marginTop="@dimen/y_ui_px_21.0"
+        android:layout_marginBottom="@dimen/y_ui_px_43.0"
         android:layout_width="match_parent"
         android:layout_weight="1"
         android:layout_height="0px">
@@ -60,10 +60,10 @@
             android:layout_height="match_parent"/>
         <TextView
             android:visibility="gone"
-            android:layout_marginBottom="@dimen/defender_y_ui_px_30.0"
-            android:layout_marginTop="@dimen/defender_y_ui_px_110.0"
+            android:layout_marginBottom="@dimen/y_ui_px_30.0"
+            android:layout_marginTop="@dimen/y_ui_px_110.0"
             android:layout_gravity="center_horizontal"
-            android:textSize="@dimen/defender_font_ui_px_40.0"
+            android:textSize="@dimen/font_ui_px_40.0"
             android:textColor="@color/color_FFFFFF"
             android:text="@string/method_info"
             android:layout_width="wrap_content"
@@ -71,9 +71,9 @@
         <TextView
             android:visibility="gone"
             android:text=""
-            android:layout_marginTop="@dimen/defender_y_ui_px_179.0"
-            android:layout_marginRight="@dimen/defender_x_ui_px_25.0"
-            android:layout_marginLeft="@dimen/defender_x_ui_px_90.0"
+            android:layout_marginTop="@dimen/y_ui_px_179.0"
+            android:layout_marginRight="@dimen/x_ui_px_25.0"
+            android:layout_marginLeft="@dimen/x_ui_px_90.0"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </FrameLayout>

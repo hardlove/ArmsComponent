@@ -36,4 +36,5 @@ dependencies {
     api rootProject.ext.dependencies["NewbieGuide"]
     api rootProject.ext.dependencies["fab"]
 
+
 }

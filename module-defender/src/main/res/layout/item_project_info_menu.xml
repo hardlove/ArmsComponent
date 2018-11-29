@@ -3,6 +3,6 @@
     android:clickable="true"
     android:layout_width="match_parent"
     android:gravity="center_vertical"
-    android:paddingLeft="@dimen/defender_x_ui_px_40.0"
-    android:textSize="@dimen/defender_font_ui_px_32.0"
-    android:layout_height="@dimen/defender_y_ui_px_89.0"/>
+    android:paddingLeft="@dimen/x_ui_px_40.0"
+    android:textSize="@dimen/font_ui_px_32.0"
+    android:layout_height="@dimen/y_ui_px_89.0"/>

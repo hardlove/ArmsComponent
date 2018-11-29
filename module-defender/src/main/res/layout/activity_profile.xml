@@ -19,33 +19,33 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/defender_x_ui_px_36.0"
-        android:layout_marginRight="@dimen/defender_x_ui_px_36.0"
-        android:layout_marginTop="@dimen/defender_y_ui_px_53.0"
+        android:layout_marginLeft="@dimen/x_ui_px_36.0"
+        android:layout_marginRight="@dimen/x_ui_px_36.0"
+        android:layout_marginTop="@dimen/y_ui_px_53.0"
         android:text="姓名"
         android:textColor="@color/color_BCC1C6"
-        android:textSize="@dimen/defender_font_ui_px_28.0" />
+        android:textSize="@dimen/font_ui_px_28.0" />
 
     <android.support.v7.widget.AppCompatEditText
         android:id="@+id/edt_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/defender_x_ui_px_36.0"
-        android:layout_marginRight="@dimen/defender_x_ui_px_36.0"
-        android:paddingTop="@dimen/defender_y_ui_px_26.0"
+        android:layout_marginLeft="@dimen/x_ui_px_36.0"
+        android:layout_marginRight="@dimen/x_ui_px_36.0"
+        android:paddingTop="@dimen/y_ui_px_26.0"
         android:text="陈露"
         android:textColor="@color/color_3586DA"
-        android:textSize="@dimen/defender_font_ui_px_28.0" />
+        android:textSize="@dimen/font_ui_px_28.0" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/defender_x_ui_px_36.0"
-        android:layout_marginRight="@dimen/defender_x_ui_px_36.0"
-        android:layout_marginTop="@dimen/defender_y_ui_px_53.0"
+        android:layout_marginLeft="@dimen/x_ui_px_36.0"
+        android:layout_marginRight="@dimen/x_ui_px_36.0"
+        android:layout_marginTop="@dimen/y_ui_px_53.0"
         android:text="所在地"
         android:textColor="@color/color_BCC1C6"
-        android:textSize="@dimen/defender_font_ui_px_28.0" />
+        android:textSize="@dimen/font_ui_px_28.0" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -55,12 +55,12 @@
             android:id="@+id/edt_city"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/defender_x_ui_px_36.0"
-            android:layout_marginRight="@dimen/defender_x_ui_px_36.0"
+            android:layout_marginLeft="@dimen/x_ui_px_36.0"
+            android:layout_marginRight="@dimen/x_ui_px_36.0"
             android:hint="请点击选择你所在的城市"
-            android:paddingTop="@dimen/defender_y_ui_px_26.0"
+            android:paddingTop="@dimen/y_ui_px_26.0"
             android:textColor="@color/color_3586DA"
-            android:textSize="@dimen/defender_font_ui_px_28.0" />
+            android:textSize="@dimen/font_ui_px_28.0" />
 
         <ImageView
             android:id="@+id/iv_choose_city"
@@ -68,7 +68,7 @@
             android:layout_height="wrap_content"
             android:layout_alignRight="@id/edt_city"
             android:layout_centerVertical="true"
-            android:paddingLeft="@dimen/defender_x_ui_px_90.0"
+            android:paddingLeft="@dimen/x_ui_px_90.0"
             android:src="@mipmap/input_icon_details" />
     </RelativeLayout>
 
@@ -76,44 +76,44 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/defender_x_ui_px_36.0"
-        android:layout_marginRight="@dimen/defender_x_ui_px_36.0"
-        android:layout_marginTop="@dimen/defender_y_ui_px_53.0"
+        android:layout_marginLeft="@dimen/x_ui_px_36.0"
+        android:layout_marginRight="@dimen/x_ui_px_36.0"
+        android:layout_marginTop="@dimen/y_ui_px_53.0"
         android:text="所在单位"
         android:textColor="@color/color_BCC1C6"
-        android:textSize="@dimen/defender_font_ui_px_28.0" />
+        android:textSize="@dimen/font_ui_px_28.0" />
 
     <android.support.v7.widget.AppCompatEditText
         android:id="@+id/edt_company"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/defender_x_ui_px_36.0"
-        android:layout_marginRight="@dimen/defender_x_ui_px_36.0"
+        android:layout_marginLeft="@dimen/x_ui_px_36.0"
+        android:layout_marginRight="@dimen/x_ui_px_36.0"
         android:hint="请点击选择你所在的单位"
-        android:paddingTop="@dimen/defender_y_ui_px_26.0"
+        android:paddingTop="@dimen/y_ui_px_26.0"
         android:textColor="@color/color_3586DA"
-        android:textSize="@dimen/defender_font_ui_px_28.0" />
+        android:textSize="@dimen/font_ui_px_28.0" />
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/defender_x_ui_px_36.0"
-        android:layout_marginRight="@dimen/defender_x_ui_px_36.0"
-        android:layout_marginTop="@dimen/defender_y_ui_px_53.0"
+        android:layout_marginLeft="@dimen/x_ui_px_36.0"
+        android:layout_marginRight="@dimen/x_ui_px_36.0"
+        android:layout_marginTop="@dimen/y_ui_px_53.0"
         android:text="手机"
         android:textColor="@color/color_BCC1C6"
-        android:textSize="@dimen/defender_font_ui_px_28.0" />
+        android:textSize="@dimen/font_ui_px_28.0" />
 
     <android.support.v7.widget.AppCompatEditText
         android:id="@+id/edt_phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/defender_x_ui_px_36.0"
-        android:layout_marginRight="@dimen/defender_x_ui_px_36.0"
+        android:layout_marginLeft="@dimen/x_ui_px_36.0"
+        android:layout_marginRight="@dimen/x_ui_px_36.0"
         android:hint="请点击选择你所的手机号码"
-        android:paddingTop="@dimen/defender_y_ui_px_26.0"
+        android:paddingTop="@dimen/y_ui_px_26.0"
         android:textColor="@color/color_3586DA"
-        android:textSize="@dimen/defender_font_ui_px_28.0" />
+        android:textSize="@dimen/font_ui_px_28.0" />
 
 </LinearLayout>

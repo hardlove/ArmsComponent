@@ -27,7 +27,7 @@
         android:id="@+id/tv_company"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/defender_y_ui_px_15.0"
+        android:paddingTop="@dimen/y_ui_px_15.0"
         android:text="上海市浦东新区食品药品质量监测局"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 

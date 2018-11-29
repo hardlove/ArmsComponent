@@ -4,10 +4,10 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center_horizontal"
     android:background="@color/color_FFFFFF"
-    android:minWidth="@dimen/defender_x_ui_px_561.0"
+    android:minWidth="@dimen/x_ui_px_561.0"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/defender_y_ui_px_49.0"
-    android:paddingTop="@dimen/defender_y_ui_px_49.0">
+    android:paddingBottom="@dimen/y_ui_px_49.0"
+    android:paddingTop="@dimen/y_ui_px_49.0">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -19,11 +19,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:paddingLeft="@dimen/defender_font_ui_px_43.0"
-            android:paddingRight="@dimen/defender_x_ui_px_20.0"
+            android:paddingLeft="@dimen/font_ui_px_43.0"
+            android:paddingRight="@dimen/x_ui_px_20.0"
             android:text="上传中"
             android:textColor="@color/color_1F1F1F"
-            android:textSize="@dimen/defender_font_ui_px_36.0"
+            android:textSize="@dimen/font_ui_px_36.0"
             android:textStyle="bold" />
 
         <ProgressBar
@@ -35,11 +35,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/defender_y_ui_px_30.0"
-        android:paddingLeft="@dimen/defender_font_ui_px_43.0"
+        android:layout_marginTop="@dimen/y_ui_px_30.0"
+        android:paddingLeft="@dimen/font_ui_px_43.0"
         android:text="正在上传检测结果，请您耐心等待"
         android:textColor="@color/color_222222"
-        android:textSize="@dimen/defender_font_ui_px_32.0" />
+        android:textSize="@dimen/font_ui_px_32.0" />
 
 
 </LinearLayout>

@@ -42,6 +42,7 @@ dependencies {
         exclude module: 'support-v4'
         exclude module: 'support-annotations'
     }
+    api rootProject.ext.dependencies["autosize"]
     api rootProject.ext.dependencies["retrofit-url-manager"]
     api rootProject.ext.dependencies["multidex"]//分包
 }

@@ -11,8 +11,8 @@
         android:layout_height="wrap_content"
         android:background="@color/color_FFFFFF"
         android:orientation="vertical"
-        android:paddingLeft="@dimen/defender_x_ui_px_48.0"
-        android:paddingRight="@dimen/defender_x_ui_px_48.0"
+        android:paddingLeft="@dimen/x_ui_px_48.0"
+        android:paddingRight="@dimen/x_ui_px_48.0"
         >
 
 
@@ -20,32 +20,32 @@
             android:id="@+id/tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/defender_y_ui_px_44.0"
+            android:layout_marginTop="@dimen/y_ui_px_44.0"
             android:paddingBottom="0px"
-            android:paddingLeft="@dimen/defender_x_ui_px_4.0"
+            android:paddingLeft="@dimen/x_ui_px_4.0"
             android:text="筛选"
             android:textColor="@color/color_1F1F1F"
-            android:textSize="@dimen/defender_font_ui_px_36.0"
+            android:textSize="@dimen/font_ui_px_36.0"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/defender_y_ui_px_15.0"
+            android:layout_marginTop="@dimen/y_ui_px_15.0"
             android:layout_weight="1"
             android:gravity="bottom"
-            android:paddingLeft="@dimen/defender_x_ui_px_4.0"
-            android:paddingTop="@dimen/defender_y_ui_px_20.0"
+            android:paddingLeft="@dimen/x_ui_px_4.0"
+            android:paddingTop="@dimen/y_ui_px_20.0"
             android:text="样品分类"
             android:textColor="@color/color_BCC1C6"
-            android:textSize="@dimen/defender_font_ui_px_24.0"
+            android:textSize="@dimen/font_ui_px_24.0"
             />
 
         <FrameLayout
             android:id="@+id/frame_select_sample_type"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/defender_y_ui_px_0.0"
+            android:layout_marginTop="@dimen/y_ui_px_0.0"
             >
 
             <EditText
@@ -58,7 +58,7 @@
                 android:longClickable="false"
                 android:textColor="@color/color_1F1F1F"
                 android:textColorHint="@color/color_BCC1C6"
-                android:textSize="@dimen/defender_font_ui_px_28.0"
+                android:textSize="@dimen/font_ui_px_28.0"
                 />
 
             <ImageView
@@ -67,8 +67,8 @@
                 android:layout_gravity="right|center_vertical"
                 android:clickable="false"
                 android:longClickable="false"
-                android:paddingLeft="@dimen/defender_x_ui_px_15.0"
-                android:paddingRight="@dimen/defender_x_ui_px_25.0"
+                android:paddingLeft="@dimen/x_ui_px_15.0"
+                android:paddingRight="@dimen/x_ui_px_25.0"
                 app:srcCompat="@mipmap/icon_list_right"/>
         </FrameLayout>
 
@@ -79,17 +79,17 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="bottom"
-            android:paddingLeft="@dimen/defender_x_ui_px_4.0"
-            android:paddingTop="@dimen/defender_y_ui_px_20.0"
+            android:paddingLeft="@dimen/x_ui_px_4.0"
+            android:paddingTop="@dimen/y_ui_px_20.0"
             android:text="样品名称"
             android:textColor="@color/color_BCC1C6"
-            android:textSize="@dimen/defender_font_ui_px_24.0"
+            android:textSize="@dimen/font_ui_px_24.0"
             />
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/defender_y_ui_px_0.0"
+            android:layout_marginTop="@dimen/y_ui_px_0.0"
             >
 
             <EditText
@@ -102,15 +102,15 @@
                 android:lines="1"
                 android:textColor="@color/color_1F1F1F"
                 android:textColorHint="@color/color_BCC1C6"
-                android:textSize="@dimen/defender_font_ui_px_28.0"
+                android:textSize="@dimen/font_ui_px_28.0"
                 />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right|center_vertical"
-                android:paddingLeft="@dimen/defender_x_ui_px_15.0"
-                android:paddingRight="@dimen/defender_x_ui_px_25.0"
+                android:paddingLeft="@dimen/x_ui_px_15.0"
+                android:paddingRight="@dimen/x_ui_px_25.0"
                 android:visibility="gone"
                 app:srcCompat="@mipmap/icon_list_right"/>
         </FrameLayout>
@@ -122,18 +122,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="bottom"
-            android:paddingLeft="@dimen/defender_x_ui_px_4.0"
-            android:paddingTop="@dimen/defender_y_ui_px_20.0"
+            android:paddingLeft="@dimen/x_ui_px_4.0"
+            android:paddingTop="@dimen/y_ui_px_20.0"
             android:text="检测项目"
             android:textColor="@color/color_BCC1C6"
-            android:textSize="@dimen/defender_font_ui_px_24.0"
+            android:textSize="@dimen/font_ui_px_24.0"
             />
 
         <FrameLayout
             android:id="@+id/frame_select_assayItem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/defender_y_ui_px_0.0"
+            android:layout_marginTop="@dimen/y_ui_px_0.0"
             >
 
             <EditText
@@ -146,7 +146,7 @@
                 android:longClickable="false"
                 android:textColor="@color/color_1F1F1F"
                 android:textColorHint="@color/color_BCC1C6"
-                android:textSize="@dimen/defender_font_ui_px_28.0"
+                android:textSize="@dimen/font_ui_px_28.0"
                 />
 
             <ImageView
@@ -156,8 +156,8 @@
                 android:layout_gravity="right|center_vertical"
                 android:clickable="false"
                 android:longClickable="false"
-                android:paddingLeft="@dimen/defender_x_ui_px_15.0"
-                android:paddingRight="@dimen/defender_x_ui_px_25.0"
+                android:paddingLeft="@dimen/x_ui_px_15.0"
+                android:paddingRight="@dimen/x_ui_px_25.0"
                 app:srcCompat="@mipmap/icon_list_right"/>
         </FrameLayout>
 
@@ -168,17 +168,17 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="bottom"
-            android:paddingLeft="@dimen/defender_x_ui_px_4.0"
-            android:paddingTop="@dimen/defender_y_ui_px_20.0"
+            android:paddingLeft="@dimen/x_ui_px_4.0"
+            android:paddingTop="@dimen/y_ui_px_20.0"
             android:text="受检对象"
             android:textColor="@color/color_BCC1C6"
-            android:textSize="@dimen/defender_font_ui_px_24.0"
+            android:textSize="@dimen/font_ui_px_24.0"
             />
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/defender_y_ui_px_0.0"
+            android:layout_marginTop="@dimen/y_ui_px_0.0"
             >
 
             <EditText
@@ -191,15 +191,15 @@
                 android:lines="1"
                 android:textColor="@color/color_1F1F1F"
                 android:textColorHint="@color/color_BCC1C6"
-                android:textSize="@dimen/defender_font_ui_px_28.0"
+                android:textSize="@dimen/font_ui_px_28.0"
                 />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right|center_vertical"
-                android:paddingLeft="@dimen/defender_x_ui_px_15.0"
-                android:paddingRight="@dimen/defender_x_ui_px_25.0"
+                android:paddingLeft="@dimen/x_ui_px_15.0"
+                android:paddingRight="@dimen/x_ui_px_25.0"
                 android:visibility="gone"
                 app:srcCompat="@mipmap/icon_list_right"/>
         </FrameLayout>
@@ -210,18 +210,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="bottom"
-            android:paddingLeft="@dimen/defender_x_ui_px_4.0"
-            android:paddingTop="@dimen/defender_y_ui_px_20.0"
+            android:paddingLeft="@dimen/x_ui_px_4.0"
+            android:paddingTop="@dimen/y_ui_px_20.0"
             android:text="判定结果"
             android:textColor="@color/color_BCC1C6"
-            android:textSize="@dimen/defender_font_ui_px_24.0"
+            android:textSize="@dimen/font_ui_px_24.0"
             />
 
         <RadioGroup
             android:id="@+id/radio_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/defender_y_ui_px_27.0"
+            android:layout_marginTop="@dimen/y_ui_px_27.0"
             android:orientation="horizontal"
             >
 
@@ -232,7 +232,7 @@
                 android:layout_weight="1"
                 android:text="检出"
                 android:textColor="@drawable/font_selector_gray_drak"
-                android:textSize="@dimen/defender_font_ui_px_28.0"/>
+                android:textSize="@dimen/font_ui_px_28.0"/>
 
             <RadioButton
                 android:id="@+id/radio_un_checked"
@@ -241,7 +241,7 @@
                 android:layout_weight="1"
                 android:text="未检出"
                 android:textColor="@drawable/font_selector_gray_drak"
-                android:textSize="@dimen/defender_font_ui_px_28.0"/>
+                android:textSize="@dimen/font_ui_px_28.0"/>
 
             <RadioButton
                 android:id="@+id/radio_all_checked"
@@ -251,7 +251,7 @@
                 android:checked="true"
                 android:text="全部"
                 android:textColor="@drawable/font_selector_gray_drak"
-                android:textSize="@dimen/defender_font_ui_px_28.0"/>
+                android:textSize="@dimen/font_ui_px_28.0"/>
 
         </RadioGroup>
 
@@ -261,18 +261,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="bottom"
-            android:paddingLeft="@dimen/defender_x_ui_px_4.0"
-            android:paddingTop="@dimen/defender_y_ui_px_20.0"
+            android:paddingLeft="@dimen/x_ui_px_4.0"
+            android:paddingTop="@dimen/y_ui_px_20.0"
             android:text="检测时间段"
             android:textColor="@color/color_BCC1C6"
-            android:textSize="@dimen/defender_font_ui_px_24.0"
+            android:textSize="@dimen/font_ui_px_24.0"
             />
 
         <RadioGroup
             android:id="@+id/radio_group_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/defender_y_ui_px_26.0"
+            android:layout_marginTop="@dimen/y_ui_px_26.0"
             android:orientation="horizontal"
             >
 
@@ -284,23 +284,23 @@
                 android:background="@drawable/bg_selector"
                 android:button="@null"
                 android:gravity="center"
-                android:padding="@dimen/defender_y_ui_px_16.0"
+                android:padding="@dimen/y_ui_px_16.0"
                 android:text="最近一周"
-                android:textSize="@dimen/defender_font_ui_px_28.0"/>
+                android:textSize="@dimen/font_ui_px_28.0"/>
 
             <RadioButton
                 android:id="@+id/radio_time_month"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/defender_x_ui_px_19.0"
-                android:layout_marginRight="@dimen/defender_x_ui_px_19.0"
+                android:layout_marginLeft="@dimen/x_ui_px_19.0"
+                android:layout_marginRight="@dimen/x_ui_px_19.0"
                 android:layout_weight="1"
                 android:background="@drawable/bg_selector"
                 android:button="@null"
                 android:gravity="center"
-                android:padding="@dimen/defender_y_ui_px_16.0"
+                android:padding="@dimen/y_ui_px_16.0"
                 android:text="最近一个月"
-                android:textSize="@dimen/defender_font_ui_px_28.0"/>
+                android:textSize="@dimen/font_ui_px_28.0"/>
 
             <RadioButton
                 android:id="@+id/radio_time_all"
@@ -310,9 +310,9 @@
                 android:background="@drawable/bg_selector"
                 android:button="@null"
                 android:gravity="center"
-                android:padding="@dimen/defender_y_ui_px_16.0"
+                android:padding="@dimen/y_ui_px_16.0"
                 android:text="全部"
-                android:textSize="@dimen/defender_font_ui_px_28.0"/>
+                android:textSize="@dimen/font_ui_px_28.0"/>
 
         </RadioGroup>
 
@@ -320,37 +320,37 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/defender_y_ui_px_32.0"
-            android:layout_marginTop="@dimen/defender_y_ui_px_60.0"
+            android:layout_marginBottom="@dimen/y_ui_px_32.0"
+            android:layout_marginTop="@dimen/y_ui_px_60.0"
             >
 
-            <com.hardlove.mobiledf.widgets.StateButton
+            <com.hardlove.cl.fooddefender.widgets.StateButton
                 android:id="@+id/stb_reset"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="@dimen/defender_x_ui_px_32.0"
+                android:layout_marginRight="@dimen/x_ui_px_32.0"
                 android:layout_weight="1"
-                android:padding="@dimen/defender_y_ui_px_16.0"
+                android:padding="@dimen/y_ui_px_16.0"
                 android:shadowColor="@android:color/transparent"
                 android:text="重置"
                 android:textColor="@color/color_505050"
-                android:textSize="@dimen/defender_font_ui_px_28.0"
+                android:textSize="@dimen/font_ui_px_28.0"
                 app:normalBackgroundColor="#FAFAFA"
                 app:pressedBackgroundColor="#FAFAFA"
-                app:radius="@dimen/defender_x_ui_px_4.0"/>
+                app:radius="@dimen/x_ui_px_4.0"/>
 
-            <com.hardlove.mobiledf.widgets.StateButton
+            <com.hardlove.cl.fooddefender.widgets.StateButton
                 android:id="@+id/stb_ok"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:padding="@dimen/defender_y_ui_px_16.0"
+                android:padding="@dimen/y_ui_px_16.0"
                 android:text="确定"
                 android:textColor="@color/color_FFFFFF"
-                android:textSize="@dimen/defender_font_ui_px_28.0"
+                android:textSize="@dimen/font_ui_px_28.0"
                 app:normalBackgroundColor="@color/color_3586DA"
                 app:pressedBackgroundColor="@color/color_3586DA"
-                app:radius="@dimen/defender_x_ui_px_4.0"/>
+                app:radius="@dimen/x_ui_px_4.0"/>
         </LinearLayout>
 
     </LinearLayout>

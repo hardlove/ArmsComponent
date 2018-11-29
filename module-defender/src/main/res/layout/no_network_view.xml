@@ -15,10 +15,10 @@
         android:id="@+id/tv_tips"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/defender_y_ui_px_21.0"
+        android:layout_marginTop="@dimen/y_ui_px_21.0"
         android:text="网络无法连接"
         android:textColor="@color/color_BCC1C6"
-        android:textSize="@dimen/defender_font_ui_px_28.0"/>
+        android:textSize="@dimen/font_ui_px_28.0"/>
 
     <Button
         android:id="@+id/btn_reload"

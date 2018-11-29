@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:gravity="center"
-            android:padding="@dimen/defender_font_ui_px_28.0"
+            android:padding="@dimen/font_ui_px_28.0"
             android:text="退出"
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
             android:textColor="@color/colorPrimary"/>

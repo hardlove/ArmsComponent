@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/defender_y_ui_px_113.0"
+        android:layout_height="@dimen/y_ui_px_113.0"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
@@ -15,8 +15,8 @@
             android:id="@+id/iv_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/defender_x_ui_px_40.0"
-            android:layout_marginRight="@dimen/defender_x_ui_px_70.0"
+            android:layout_marginLeft="@dimen/x_ui_px_40.0"
+            android:layout_marginRight="@dimen/x_ui_px_70.0"
             android:src="@mipmap/nav_icon_back_black" />
 
         <EditText
@@ -33,7 +33,7 @@
             android:id="@+id/iv_cancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/defender_x_ui_px_58.0"
+            android:layout_marginRight="@dimen/x_ui_px_58.0"
             android:src="@mipmap/icon_delete" />
 
 

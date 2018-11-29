@@ -8,7 +8,7 @@
         android:id="@id/toolbar"
         app:leftIcon="@mipmap/nav_icon_back"
         app:leftTitle="样品分类"
-        app:titleTextSize="@dimen/defender_y_ui_px_40.0"
+        app:titleTextSize="@dimen/y_ui_px_40.0"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -18,14 +18,14 @@
         android:text="请选择您要检测的样品分类"
         android:textStyle="bold"
         android:textColor="@color/color_505050"
-        android:textSize="@dimen/defender_font_ui_px_28.0"
-        android:layout_marginLeft="@dimen/defender_x_ui_px_43.0"
-        android:layout_marginTop="@dimen/defender_y_ui_px_36.0"
+        android:textSize="@dimen/font_ui_px_28.0"
+        android:layout_marginLeft="@dimen/x_ui_px_43.0"
+        android:layout_marginTop="@dimen/y_ui_px_36.0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <android.support.v7.widget.RecyclerView
-        android:padding="@dimen/defender_x_ui_px_40.0"
+        android:padding="@dimen/x_ui_px_40.0"
         android:id="@id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent">

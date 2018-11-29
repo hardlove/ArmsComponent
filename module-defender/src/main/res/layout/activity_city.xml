@@ -17,11 +17,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="@dimen/defender_y_ui_px_25.0"
-        android:paddingTop="@dimen/defender_y_ui_px_25.0">
+        android:paddingBottom="@dimen/y_ui_px_25.0"
+        android:paddingTop="@dimen/y_ui_px_25.0">
 
         <TextView
-            android:paddingLeft="@dimen/defender_x_ui_px_37.0"
+            android:paddingLeft="@dimen/x_ui_px_37.0"
             android:id="@+id/tv_location"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_margin="@dimen/defender_x_ui_px_5.0"
+        android:layout_margin="@dimen/x_ui_px_5.0"
         android:scaleType="centerCrop"/>
 
 </FrameLayout>

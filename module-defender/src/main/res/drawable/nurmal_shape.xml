@@ -5,9 +5,9 @@
 
     <solid android:color="@color/color_FFFFFF"/>
     <size
-        android:width="@dimen/defender_x_ui_px_50.0"
-        android:height="@dimen/defender_x_ui_px_50.0"/>
-    <corners android:radius="@dimen/defender_x_ui_px_25.0"/>
+        android:width="@dimen/x_ui_px_50.0"
+        android:height="@dimen/x_ui_px_50.0"/>
+    <corners android:radius="@dimen/x_ui_px_25.0"/>
     <stroke
         android:width="1px"
         android:color="@color/color_BCC1C6"

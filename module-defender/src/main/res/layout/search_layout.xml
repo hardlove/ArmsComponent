@@ -2,7 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/searchLayout"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/defender_x_ui_px_113.0"
+    android:layout_height="@dimen/x_ui_px_113.0"
     android:background="@color/color_3586DA"
     android:focusableInTouchMode="true">
 
@@ -10,29 +10,29 @@
         android:id="@+id/searchEdit"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="@dimen/defender_y_ui_px_16.0"
-        android:layout_marginLeft="@dimen/defender_x_ui_px_15.0"
-        android:layout_marginRight="@dimen/defender_x_ui_px_15.0"
-        android:layout_marginTop="@dimen/defender_y_ui_px_16.0"
+        android:layout_marginBottom="@dimen/y_ui_px_16.0"
+        android:layout_marginLeft="@dimen/x_ui_px_15.0"
+        android:layout_marginRight="@dimen/x_ui_px_15.0"
+        android:layout_marginTop="@dimen/y_ui_px_16.0"
         android:background="@color/color_FFFFFF"
         android:gravity="center_vertical"
         android:maxLines="1"
-        android:paddingLeft="@dimen/defender_x_ui_px_100.0"
+        android:paddingLeft="@dimen/x_ui_px_100.0"
         android:text="@string/project_method_info_search_hint"
         android:textColor="@color/color_84878D" />
 
     <ImageView
         android:id="@+id/searchIcon"
-        android:layout_width="@dimen/defender_x_ui_px_81.0"
-        android:layout_height="@dimen/defender_y_ui_px_81.0"
+        android:layout_width="@dimen/x_ui_px_81.0"
+        android:layout_height="@dimen/y_ui_px_81.0"
         android:layout_gravity="center_vertical"
-        android:layout_marginLeft="@dimen/defender_x_ui_px_15.0"
+        android:layout_marginLeft="@dimen/x_ui_px_15.0"
         android:clickable="true"
         android:focusableInTouchMode="true"
-        android:paddingBottom="@dimen/defender_y_ui_px_23.0"
-        android:paddingLeft="@dimen/defender_x_ui_px_24.0"
-        android:paddingRight="@dimen/defender_x_ui_px_24.0"
-        android:paddingTop="@dimen/defender_y_ui_px_23.0"
+        android:paddingBottom="@dimen/y_ui_px_23.0"
+        android:paddingLeft="@dimen/x_ui_px_24.0"
+        android:paddingRight="@dimen/x_ui_px_24.0"
+        android:paddingTop="@dimen/y_ui_px_23.0"
         android:src="@mipmap/icon_search" />
 
     <View

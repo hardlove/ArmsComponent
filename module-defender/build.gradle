@@ -2,7 +2,7 @@ apply from:"../common_component_build.gradle"
 apply plugin: 'realm-android'
 
 android {
-    resourcePrefix "defender_" //给 Module 内的资源名增加前缀, 避免资源名冲突
+    resourcePrefix "" //给 Module 内的资源名增加前缀, 避免资源名冲突
 }
 allprojects {
     repositories {

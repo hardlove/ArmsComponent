@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="@dimen/defender_x_ui_px_561.0"
+              android:layout_width="@dimen/x_ui_px_561.0"
               android:layout_height="match_parent"
               android:layout_gravity="center_horizontal"
               android:background="@color/color_FFFFFF"
@@ -16,65 +16,65 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingBottom="@dimen/defender_y_ui_px_7.0"
-        android:paddingLeft="@dimen/defender_x_ui_px_42.0"
-        android:paddingTop="@dimen/defender_y_ui_px_50.0"
+        android:paddingBottom="@dimen/y_ui_px_7.0"
+        android:paddingLeft="@dimen/x_ui_px_42.0"
+        android:paddingTop="@dimen/y_ui_px_50.0"
         android:text="连接蓝牙打印机"
         android:textColor="@color/color_1F1F1F"
-        android:textSize="@dimen/defender_font_ui_px_36.0"
+        android:textSize="@dimen/font_ui_px_36.0"
         android:textStyle="bold"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/defender_y_ui_px_320.0"
-        android:paddingLeft="@dimen/defender_x_ui_px_32.0"
-        android:paddingRight="@dimen/defender_x_ui_px_32.0">
+        android:layout_height="@dimen/y_ui_px_320.0"
+        android:paddingLeft="@dimen/x_ui_px_32.0"
+        android:paddingRight="@dimen/x_ui_px_32.0">
     </android.support.v7.widget.RecyclerView>
 
     <TextView
         android:id="@+id/tv_empty_tips"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/defender_y_ui_px_35.0"
-        android:paddingLeft="@dimen/defender_x_ui_px_44.0"
-        android:paddingTop="@dimen/defender_y_ui_px_35.0"
+        android:padding="@dimen/y_ui_px_35.0"
+        android:paddingLeft="@dimen/x_ui_px_44.0"
+        android:paddingTop="@dimen/y_ui_px_35.0"
         android:text="未发现蓝牙设备!"
         android:textColor="#f00"
-        android:textSize="@dimen/defender_font_ui_px_28.0"
+        android:textSize="@dimen/font_ui_px_28.0"
         android:textStyle="bold"
         android:visibility="gone"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="@dimen/defender_x_ui_px_44.0"
-        android:paddingTop="@dimen/defender_y_ui_px_35.0"
+        android:paddingLeft="@dimen/x_ui_px_44.0"
+        android:paddingTop="@dimen/y_ui_px_35.0"
         android:text="温馨提示"
         android:textColor="@color/color_222222"
-        android:textSize="@dimen/defender_font_ui_px_24.0"
+        android:textSize="@dimen/font_ui_px_24.0"
         android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingLeft="@dimen/defender_x_ui_px_44.0"
-        android:paddingTop="@dimen/defender_y_ui_px_23.0"
+        android:paddingLeft="@dimen/x_ui_px_44.0"
+        android:paddingTop="@dimen/y_ui_px_23.0"
         android:text="1 请打开蓝牙，搜索设备\n2 选择您想连接的设备"
         android:textColor="@color/color_84878D"
-        android:textSize="@dimen/defender_font_ui_px_24.0"/>
+        android:textSize="@dimen/font_ui_px_24.0"/>
 
     <TextView
         android:id="@+id/tv_cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:layout_marginBottom="@dimen/defender_y_ui_px_31.0"
-        android:layout_marginRight="@dimen/defender_x_ui_px_60.0"
+        android:layout_marginBottom="@dimen/y_ui_px_31.0"
+        android:layout_marginRight="@dimen/x_ui_px_60.0"
         android:onClick="onCancel"
-        android:paddingTop="@dimen/defender_y_ui_px_30.0"
+        android:paddingTop="@dimen/y_ui_px_30.0"
         android:text="取消"
         android:textColor="@color/colorPrimary"
-        android:textSize="@dimen/defender_font_ui_px_28.0"/>
+        android:textSize="@dimen/font_ui_px_28.0"/>
 
 </LinearLayout>

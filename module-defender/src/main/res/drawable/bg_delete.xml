@@ -5,8 +5,8 @@
 
     <solid android:color="@color/color_090909"/>
     <size
-        android:width="@dimen/defender_x_ui_px_36.0"
-        android:height="@dimen/defender_x_ui_px_36.0"/>
+        android:width="@dimen/x_ui_px_36.0"
+        android:height="@dimen/x_ui_px_36.0"/>
     <corners android:bottomLeftRadius="6dp"/>
 
 

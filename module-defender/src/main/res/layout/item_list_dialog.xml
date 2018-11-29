@@ -20,9 +20,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
-        android:paddingBottom="@dimen/defender_y_ui_px_20.0"
-        android:paddingLeft="@dimen/defender_x_ui_px_61.0"
-        android:paddingTop="@dimen/defender_y_ui_px_20.0"
+        android:paddingBottom="@dimen/y_ui_px_20.0"
+        android:paddingLeft="@dimen/x_ui_px_61.0"
+        android:paddingTop="@dimen/y_ui_px_20.0"
         android:text="酸性色素"
         android:textColor="@drawable/item_font_left_selector_bg" />
 

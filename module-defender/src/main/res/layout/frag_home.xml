@@ -24,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/defender_defender_y_ui_px_31.0"
+            android:layout_marginTop="@dimen/y_ui_px_31.0"
             android:src="@mipmap/emptystate_message"/>
 
 
@@ -40,8 +40,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|right"
-            android:layout_marginBottom="@dimen/defender_defender_y_ui_px_219.0"
-            android:layout_marginRight="@dimen/defender_x_ui_px_32.0">
+            android:layout_marginBottom="@dimen/y_ui_px_219.0"
+            android:layout_marginRight="@dimen/x_ui_px_32.0">
 
             <com.github.clans.fab.FloatingActionButton
                 android:id="@+id/fab_create_tip"
@@ -71,8 +71,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|right"
-            android:layout_marginBottom="@dimen/defender_y_ui_px_79.0"
-            android:layout_marginRight="@dimen/defender_x_ui_px_32.0">
+            android:layout_marginBottom="@dimen/y_ui_px_79.0"
+            android:layout_marginRight="@dimen/x_ui_px_32.0">
 
             <com.github.clans.fab.FloatingActionButton
                 android:id="@+id/fab_snyc_tip"
@@ -105,10 +105,10 @@
                 android:layout_margin="1dp"
                 android:background="@drawable/circle_red"
                 android:gravity="center"
-                android:padding="@dimen/defender_x_ui_px_15.0"
+                android:padding="@dimen/x_ui_px_15.0"
                 android:text="4/5"
                 android:textColor="@color/color_FFFFFF"
-                android:textSize="@dimen/defender_font_ui_px_28.0"
+                android:textSize="@dimen/font_ui_px_28.0"
                 android:visibility="gone"/>
 
 
