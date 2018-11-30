@@ -10,5 +10,8 @@ package com.hardlove.cl.fooddefender.mvp.model.api;
  * ================================================
  */
 public interface Api {
+    String DEFENDER_DOMAIN_NAME = "Defender";
+    String DEFENDER_DOMAIN = "http://b6899d0b59214a729339a2d44f3e0fb6-cn-qingdao.alicloudapi.com";
+//    String DEFENDER_DOMAIN = "https://114.115.222.5/";
 
 }

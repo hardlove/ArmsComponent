@@ -98,9 +98,6 @@ dependencies {
         compileOnly rootProject.ext.dependencies["canary-debug"]
         compileOnly rootProject.ext.dependencies["canary-release"]
     }
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation "org.jetbrains.anko:anko-commons:$anko_version"//Anko通用库
-    implementation "org.jetbrains.anko:anko-sqlite:$anko_version"//Anko sqlite库
 
 }
 repositories {

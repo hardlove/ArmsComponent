@@ -1,5 +1,9 @@
 apply plugin: 'com.android.library'
 
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
 android {
     compileSdkVersion rootProject.ext.android["compileSdkVersion"]
     buildToolsVersion rootProject.ext.android["buildToolsVersion"]
@@ -45,4 +49,9 @@ dependencies {
     api rootProject.ext.dependencies["autosize"]
     api rootProject.ext.dependencies["retrofit-url-manager"]
     api rootProject.ext.dependencies["multidex"]//分包
+
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    api "org.jetbrains.anko:anko-commons:$anko_version"//Anko通用库
+    api "org.jetbrains.anko:anko-sqlite:$anko_version"//Anko sqlite库
+
 }

@@ -4,12 +4,14 @@ import android.app.Application;
 import android.content.Context;
 import android.support.annotation.NonNull;
 
+import com.hardlove.cl.fooddefender.BuildConfig;
+import com.hardlove.cl.fooddefender.mvp.model.api.Api;
 import com.jess.arms.base.delegate.AppLifecycles;
 import com.jess.arms.utils.ArmsUtils;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
 
-import com.hardlove.cl.fooddefender.BuildConfig;
+import me.jessyan.retrofiturlmanager.RetrofitUrlManager;
 
 /**
  * ================================================
@@ -39,6 +41,9 @@ public class AppLifecyclesImpl implements AppLifecycles {
             //leakCanary内存泄露检查
             ArmsUtils.obtainAppComponentFromContext(application).extras().put(RefWatcher.class.getName(), BuildConfig.USE_CANARY ? LeakCanary.install(application) : RefWatcher.DISABLED);
         }
+        //使用 RetrofitUrlManager 切换 BaseUrl
+        RetrofitUrlManager.getInstance().putDomain(Api.DEFENDER_DOMAIN_NAME, Api.DEFENDER_DOMAIN);
+
     }
 
     @Override
