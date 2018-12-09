@@ -1,4 +1,4 @@
-include ':app', ':CommonSDK', ':CommonService', ':CommonRes', ':module-zhihu', ':module-gank', ':module-im', ':module-gold', ':CommonVideo', ':IMLib', ':IMKit', ':RCSticker', ':fooddefender', ':common', ':module-defender'
+include ':app', ':CommonSDK', ':CommonService', ':CommonRes', ':module-zhihu', ':module-gank', ':module-im', ':module-gold', ':CommonVideo', ':IMLib', ':IMKit', ':RCSticker', ':fooddefender', ':common', ':module-defender', ':module-water'
 project(':IMLib').projectDir = new File('ThirdLibrarys/IMLib')
 project(':IMKit').projectDir = new File('ThirdLibrarys/IMKit')
 project(':RCSticker').projectDir = new File('ThirdLibrarys/RCSticker')
