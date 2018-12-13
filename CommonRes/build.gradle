@@ -1,5 +1,7 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 android {
     compileSdkVersion rootProject.ext.android["compileSdkVersion"]
     buildToolsVersion rootProject.ext.android["buildToolsVersion"]
@@ -36,5 +38,5 @@ dependencies {
     api rootProject.ext.dependencies["NewbieGuide"]
     api rootProject.ext.dependencies["fab"]
 
-
+    kapt rootProject.ext.dependencies["dagger2-compiler"]
 }
