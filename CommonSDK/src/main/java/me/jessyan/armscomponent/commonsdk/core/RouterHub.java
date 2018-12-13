@@ -47,6 +47,11 @@ public interface RouterHub {
     String GANK = "/gank";//干货集中营组件
     String GOLD = "/gold";//稀土掘金组件
 
+
+    String LOGIN = "/login";//登陆组件
+    String WATER = "/water";//water组件
+
+
     /**
      * 服务组件, 用于给每个组件暴露特有的服务
      */
@@ -84,4 +89,13 @@ public interface RouterHub {
     String GOLD_DETAILACTIVITY = GOLD + "/DetailActivity";
 
     String VIDEO_TESTACTIVITY = "/CommonVideo/TestVideoActivity";
+
+    /**
+     * Login
+     */
+    String LOGIN_LOGINACTIVITY = LOGIN + "/LoginActivity";
+    /**
+     * Water
+     */
+    String WATER_MAINACTIVITY = WATER + "/MainActivity";
 }

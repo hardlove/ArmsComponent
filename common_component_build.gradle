@@ -21,7 +21,7 @@ android {
 
     defaultConfig {
         if (isBuildModule.toBoolean()) {
-            multiDexEnabled true//分包
+//            multiDexEnabled true//分包
         }
         minSdkVersion rootProject.ext.android["minSdkVersion"]
         targetSdkVersion rootProject.ext.android["targetSdkVersion"]
@@ -39,7 +39,7 @@ android {
     buildTypes {
         debug {
             buildConfigField "boolean", "LOG_DEBUG", "true"
-            buildConfigField "boolean", "USE_CANARY", "true"
+            buildConfigField "boolean", "USE_CANARY", "false"
             buildConfigField "boolean", "IS_BUILD_MODULE", "${isBuildModule}"
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
