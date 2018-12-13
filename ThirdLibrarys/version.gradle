@@ -1,0 +1,55 @@
+//===========================git版本信息======================================
+/**
+ * 获取当前版本的SHA1
+ */
+def getGitSHA() {
+    return 'git rev-parse --short HEAD'.execute().text.trim()
+}
+
+/**
+ * 获取commint的次数
+ * @return
+ */
+def getCommintCount() {
+    return 'git rev-list HEAD --count'.execute().getText().toInteger()
+}
+
+/**
+ * 获取app versionCode
+ */
+def getAppVersionCode() {
+    return getCommintCount()
+}
+
+/**
+ * 获取Git Tag
+ */
+def getLastGitTag() {
+    return 'git describe --abbrev=0 --tags'.execute([], project.rootDir).text.trim()
+}
+/**
+ * 获取当前时间
+ * @return
+ */
+def releaseTime() {
+    return new Date().format("yyyyMMddHHmmss", TimeZone.getTimeZone("UTC"))
+}
+/**
+ * 获取app versionName
+ * @return
+ */
+def getAppVersionName() {
+    return getLastGitTag() + "." + getGitSHA()
+}
+
+//===========================git版本信息======================================
+
+
+ext {
+//=============================================
+    gitSHA = getGitSHA()
+    gitTag = getLastGitTag()
+    buildTime = releaseTime()
+//=============================================
+
+}
