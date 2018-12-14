@@ -16,3 +16,6 @@ dependencies {
     api project(':moudle-login')
     testImplementation rootProject.ext.dependencies["junit"]
 }
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
