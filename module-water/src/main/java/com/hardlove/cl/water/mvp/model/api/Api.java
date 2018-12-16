@@ -10,5 +10,6 @@ package com.hardlove.cl.water.mvp.model.api;
  * ================================================
  */
 public interface Api {
-
+    String WATER_DOMAIN_NAME = "Water";
+    String WATER_DOMAIN = "http://wanandroid.com";
 }

@@ -103,6 +103,8 @@ class MainActivity : BaseActivity<MainPresenter>(), MainContract.View {
                 })
                 .setFirstSelectedPosition(0)
                 .initialise()
+        showFragment(0)//初始化
+
     }
 
 

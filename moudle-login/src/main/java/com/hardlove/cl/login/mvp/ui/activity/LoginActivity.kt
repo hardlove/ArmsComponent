@@ -11,9 +11,11 @@ import com.hardlove.cl.login.mvp.presenter.LoginPresenter
 import com.jess.arms.base.BaseActivity
 import com.jess.arms.di.component.AppComponent
 import com.jess.arms.utils.ArmsUtils
+import com.jess.arms.utils.DataHelper
 import kotlinx.android.synthetic.main.activity_login.*
 import me.jessyan.armscomponent.commonres.utils.LoadingDialogUtils.showLoadingDialog
 import me.jessyan.armscomponent.commonsdk.core.RouterHub
+import me.jessyan.armscomponent.commonsdk.utils.MLogger
 import me.jessyan.armscomponent.commonsdk.utils.Utils
 import org.jetbrains.anko.toast
 
@@ -23,8 +25,8 @@ open class LoginActivity : BaseActivity<LoginPresenter>(), LoginContract.View {
     }
 
     override fun onSucceed() {
-        Utils.navigation(RouterHub.WATER_MAINACTIVITY)
-        killMyself()
+        DataHelper.setIntergerSF(this, "isLogined", 1)
+        goMainActivity()
         toast("登陆成功")
     }
 
@@ -47,6 +49,20 @@ open class LoginActivity : BaseActivity<LoginPresenter>(), LoginContract.View {
         return R.layout.activity_login //如果你不需要框架帮你设置 setContentView(id) 需要自行设置,请返回 0
     }
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        var value:Int =  DataHelper.getIntergerSF(this, "isLogined")
+        MLogger.tag(TAG).d("isLogined:$value")
+        if (DataHelper.getIntergerSF(this, "isLogined") == 1) {
+            goMainActivity()
+        }
+    }
+
+    private fun goMainActivity() {
+        Utils.navigation(RouterHub.WATER_MAINACTIVITY)
+        killMyself()
+    }
+
 
     override fun initData(savedInstanceState: Bundle?) {
         login.setOnClickListener {
@@ -62,7 +78,7 @@ open class LoginActivity : BaseActivity<LoginPresenter>(), LoginContract.View {
     }
 
     override fun hideLoading() {
-        loadingDialog?.hide()
+        loadingDialog?.dismiss()
     }
 
     override fun showMessage(message: String) {

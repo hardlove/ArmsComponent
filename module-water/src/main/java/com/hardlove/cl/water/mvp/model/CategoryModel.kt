@@ -2,10 +2,9 @@ package com.hardlove.cl.water.mvp.model
 
 import android.app.Application
 import com.google.gson.Gson
-import com.hardlove.cl.water.mvp.contract.HomeContract
+import com.hardlove.cl.water.mvp.contract.CategoryContract
 import com.hardlove.cl.water.mvp.model.api.service.WaterService
-import com.hardlove.cl.water.mvp.model.entity.BaseResult
-import com.hardlove.cl.water.mvp.model.entity.Chapter
+import com.hardlove.cl.water.mvp.model.entity.ArticleResult
 import com.jess.arms.di.scope.FragmentScope
 import com.jess.arms.integration.IRepositoryManager
 import com.jess.arms.mvp.BaseModel
@@ -14,12 +13,12 @@ import javax.inject.Inject
 
 
 @FragmentScope
-class HomeModel
+class CategoryModel
 @Inject
-constructor(repositoryManager: IRepositoryManager) : BaseModel(repositoryManager), HomeContract.Model {
-    override fun queryChapters(): Observable<BaseResult<List<Chapter>>>{
-      return  mRepositoryManager.obtainRetrofitService(WaterService::class.java)
-                .queryChapters()
+constructor(repositoryManager: IRepositoryManager) : BaseModel(repositoryManager), CategoryContract.Model {
+    override fun getArtiles(id: Int, page: Int): Observable<ArticleResult> {
+        return mRepositoryManager.obtainRetrofitService(WaterService::class.java).getArtiles(id, page)
+
     }
 
     @Inject

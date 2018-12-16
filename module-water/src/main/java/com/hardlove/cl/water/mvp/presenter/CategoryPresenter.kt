@@ -1,15 +1,12 @@
 package com.hardlove.cl.water.mvp.presenter
 
 import android.app.Application
-import com.hardlove.cl.water.mvp.contract.HomeContract
-import com.hardlove.cl.water.mvp.model.entity.BaseResult
-import com.hardlove.cl.water.mvp.model.entity.Chapter
+import com.hardlove.cl.water.mvp.contract.CategoryContract
 import com.jess.arms.di.scope.FragmentScope
 import com.jess.arms.http.imageloader.ImageLoader
 import com.jess.arms.integration.AppManager
 import com.jess.arms.mvp.BasePresenter
 import com.jess.arms.utils.RxLifecycleUtils
-import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import me.jessyan.armscomponent.commonsdk.utils.MLogger
 import me.jessyan.armscomponent.commonsdk.utils.RxUtil
@@ -18,10 +15,10 @@ import javax.inject.Inject
 
 
 @FragmentScope
-class HomePresenter
+class CategoryPresenter
 @Inject
-constructor(model: HomeContract.Model, rootView: HomeContract.View) :
-        BasePresenter<HomeContract.Model, HomeContract.View>(model, rootView) {
+constructor(model: CategoryContract.Model, rootView: CategoryContract.View) :
+        BasePresenter<CategoryContract.Model, CategoryContract.View>(model, rootView) {
     @Inject
     lateinit var mErrorHandler: RxErrorHandler
     @Inject
@@ -33,30 +30,29 @@ constructor(model: HomeContract.Model, rootView: HomeContract.View) :
 
 
     override fun onDestroy() {
-        super.onDestroy()
+        super.onDestroy();
     }
 
-    /**
-     * 获取公众号列表
-     */
-    fun queryChapters() {
-        val obser: Observable<BaseResult<List<Chapter>>> = mModel.queryChapters()
+    fun getArtiles(id: Int, page: Int) {
+        mModel.getArtiles(id, page)
                 .compose(RxUtil.io_main())
-        obser.doOnSubscribe {
-            mRootView.showLoading()
-        }.doFinally {
-            mRootView.hideLoading()
-        }.compose(RxLifecycleUtils.bindToLifecycle(mRootView))
+                .doOnSubscribe {
+                    mRootView.showLoading()
+                }.doFinally {
+                    mRootView.hideLoading()
+                }
                 .subscribeOn(AndroidSchedulers.mainThread())
+                .compose(RxLifecycleUtils.bindToLifecycle(mRootView))
                 .subscribe({
                     if (it.errorCode == 0) {
-                        mRootView.onQueryChaptersSucceed(it.data)
+                        mRootView.onLoadArticlesSucceed(it.data.articles)
                     } else {
-                        mRootView.showMessage("获取公众号列表失败")
+                        mRootView.showMessage("error:${it.errorMsg}")
                     }
+
                 }, {
-                    mRootView.showMessage("获取失败")
-                    MLogger.tag(TAG).e("获取公众号列表失败：${it.localizedMessage}")
+                    mRootView.showMessage("请求失败：" + it.message)
+                    MLogger.tag(TAG).e("请求失败：${it.localizedMessage}")
                 })
     }
 }

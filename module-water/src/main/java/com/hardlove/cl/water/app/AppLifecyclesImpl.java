@@ -11,6 +11,10 @@ import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
 
 import me.jessyan.armscomponent.commonsdk.utils.MLogger;
+import me.jessyan.retrofiturlmanager.RetrofitUrlManager;
+
+import static com.hardlove.cl.water.mvp.model.api.Api.WATER_DOMAIN;
+import static com.hardlove.cl.water.mvp.model.api.Api.WATER_DOMAIN_NAME;
 
 /**
  * ================================================
@@ -41,6 +45,7 @@ public class AppLifecyclesImpl implements AppLifecycles {
             ArmsUtils.obtainAppComponentFromContext(application).extras().put(RefWatcher.class.getName(), BuildConfig.USE_CANARY ? LeakCanary.install(application) : RefWatcher.DISABLED);
         }
         MLogger.init();
+        RetrofitUrlManager.getInstance().putDomain(WATER_DOMAIN_NAME, WATER_DOMAIN);
     }
 
     @Override
