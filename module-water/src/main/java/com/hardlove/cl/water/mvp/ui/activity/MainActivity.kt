@@ -56,7 +56,8 @@ class MainActivity : BaseActivity<MainPresenter>(), MainContract.View {
     }
 
 
-    override fun initData(savedInstanceState: Bundle?) {
+
+    override fun initData(savedInsttate: Bundle?) {
         drayerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED)
         drayerLayout.addDrawerListener(object : DrawerLayout.DrawerListener {
             override fun onDrawerSlide(drawerView: View, slideOffset: Float) {

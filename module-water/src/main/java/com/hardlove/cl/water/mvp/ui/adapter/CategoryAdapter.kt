@@ -1,7 +1,7 @@
 package com.hardlove.cl.water.mvp.ui.adapter
 
 import android.app.Activity
-import android.support.graphics.drawable.VectorDrawableCompat
+import android.content.Context
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
@@ -13,6 +13,7 @@ import com.jess.arms.base.DefaultAdapter
 import com.jess.arms.base.DefaultAdapter.OnRecyclerViewItemClickListener
 import com.jess.arms.utils.ArmsUtils
 import me.jessyan.armscomponent.commonres.ui.WebActivity
+import me.jessyan.armscomponent.commonsdk.utils.ColorUtil
 import me.jessyan.armscomponent.commonsdk.utils.MLogger
 import me.jessyan.armscomponent.commonsdk.utils.TimeUtil
 
@@ -38,11 +39,15 @@ class CategoryAdapter(infos: List<ArticleResult.Data.Article>?, val mPresenter: 
 
     companion object {
         class ViewHolder(view: View, val mPresenter: CategoryPresenter) : BaseHolder<ArticleResult.Data.Article>(view) {
+            private lateinit var context: Context
             override fun setData(data: ArticleResult.Data.Article, position: Int) {
+                context = itemView.context
+
                 itemView.findViewById<TextView>(R.id.tvTitle).text = data.title
                 itemView.findViewById<TextView>(R.id.tvAuthor).text = data.author
                 itemView.findViewById<TextView>(R.id.tvPublishTime).text = TimeUtil.getStringByFormat(data.publishTime, TimeUtil.dateFormat)
                 val ivCollect = itemView.findViewById<ImageView>(R.id.ivCollect)
+                ivCollect.setImageDrawable(ColorUtil.createStateListDrawable(context.getDrawable(R.drawable.ic_favorite), context.getDrawable(R.drawable.ic_un_favorite)))
                 refreshCollectState(data, ivCollect)
                 MLogger.tag(TAG).d("Position:${position}---collect:${data.isCollect}")
                 ivCollect.setOnClickListener {
@@ -74,13 +79,7 @@ class CategoryAdapter(infos: List<ArticleResult.Data.Article>?, val mPresenter: 
             }
 
             private fun refreshCollectState(data: ArticleResult.Data.Article, ivCollect: ImageView) {
-                if (data.isCollect) {
-                    val drawableCompat = VectorDrawableCompat.create(ivCollect.resources, R.drawable.ic_favorite, itemView.context.theme)
-                    ivCollect.setImageDrawable(drawableCompat!!)
-                } else {
-                    val drawableCompat = VectorDrawableCompat.create(ivCollect.resources, R.drawable.ic_un_favorite, itemView.context.theme)
-                    ivCollect.setImageDrawable(drawableCompat!!)
-                }
+                ivCollect.isSelected = data.isCollect
             }
 
 

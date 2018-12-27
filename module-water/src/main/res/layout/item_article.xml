@@ -50,6 +50,7 @@
                     android:layout_weight="1" />
 
                 <ImageView
+                    android:src="@drawable/ic_favorite"
                     android:id="@+id/ivCollect"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
