@@ -9,6 +9,7 @@ import java.util.List;
 import io.reactivex.Observable;
 import retrofit2.http.GET;
 import retrofit2.http.Headers;
+import retrofit2.http.POST;
 import retrofit2.http.Path;
 
 import static com.hardlove.cl.water.mvp.model.api.Api.WATER_DOMAIN_NAME;
@@ -35,4 +36,22 @@ public interface WaterService {
     @Headers({DOMAIN_NAME_HEADER+WATER_DOMAIN_NAME})
     @GET("/wxarticle/list/{id}/{page}/json")
     Observable<ArticleResult> getArtiles(@Path("id") int id, @Path("page") int page);
+
+    /**
+     * 收藏站内文章
+     * @param id
+     * @return
+     */
+    @Headers({DOMAIN_NAME_HEADER+WATER_DOMAIN_NAME})
+    @POST("/lg/collect/{id}/json")
+    Observable<BaseResult<Object>> collectArticle(@Path("id") int id);
+
+    /**
+     * 取消收藏(文章列表的收藏)
+     * @param id
+     * @return
+     */
+    @Headers({DOMAIN_NAME_HEADER + WATER_DOMAIN_NAME})
+    @POST("/lg/uncollect_originId/{id}/json")
+    Observable<BaseResult<Object>> unCollectArticle(@Path("id") int id);
 }

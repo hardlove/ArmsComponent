@@ -1,6 +1,7 @@
 package com.hardlove.cl.water.mvp.contract
 
 import com.hardlove.cl.water.mvp.model.entity.ArticleResult
+import com.hardlove.cl.water.mvp.model.entity.BaseResult
 import com.jess.arms.mvp.IModel
 import com.jess.arms.mvp.IView
 import io.reactivex.Observable
@@ -14,7 +15,11 @@ interface CategoryContract {
 
     //Model层定义接口,外部只需关心Model返回的数据,无需关心内部细节,即是否使用缓存
     interface Model : IModel {
-        fun getArtiles(id: Int, page: Int):Observable<ArticleResult>
+        fun getArtiles(id: Int, page: Int): Observable<ArticleResult>
+        fun collectArticle(id: Int): Observable<BaseResult<Any>>
+        fun unCollectArticle(id: Int): Observable<BaseResult<Any>>
+
+
     }
 
 }

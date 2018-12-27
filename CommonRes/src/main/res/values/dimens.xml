@@ -224,4 +224,7 @@
     <dimen name="public_mar_bottom_200px">200px</dimen>
     <dimen name="public_mar_bottom_300px">300px</dimen>
 
+    //cardCornerRadius
+    <dimen name="public_card_corner_radius">50mm</dimen>
+
 </resources>

@@ -78,13 +78,13 @@ class MainActivity : BaseActivity<MainPresenter>(), MainContract.View {
         })
 
         bottomNavigationBar
-                .setActiveColor(R.color.public_colorPrimary)
-                .setInActiveColor(R.color.public_colorAccent)
+                .setActiveColor(R.color.public_color_0F79FD)
+                .setInActiveColor(R.color.public_color_06CB7E)
                 .setBarBackgroundColor(R.color.public_white)
                 .setMode(BottomNavigationBar.MODE_FIXED)
-                .addItem(BottomNavigationItem(R.drawable.ssdk_exception_icon, "Home"))
-                .addItem(BottomNavigationItem(R.drawable.ssdk_exception_icon, "Favorite"))
-                .addItem(BottomNavigationItem(R.drawable.ssdk_identify_icon, "Mine"))
+                .addItem(BottomNavigationItem(R.drawable.ic_home, "Home"))
+                .addItem(BottomNavigationItem(R.drawable.ic_favorite, "Favorite"))
+                .addItem(BottomNavigationItem(R.drawable.ic_news, "Mine"))
                 .setTabSelectedListener(object : BottomNavigationBar.OnTabSelectedListener {
                     override fun onTabReselected(position: Int) {
                         MLogger.tag(TAG).d("onTabReselected:$position")

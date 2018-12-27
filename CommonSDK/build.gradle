@@ -53,5 +53,6 @@ dependencies {
     api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     api "org.jetbrains.anko:anko-commons:$anko_version"//Anko通用库
     api "org.jetbrains.anko:anko-sqlite:$anko_version"//Anko sqlite库
+    api "com.github.franmontiel:PersistentCookieJar:v1.0.1"//Cookie库
 
 }

@@ -65,7 +65,8 @@ class CategoryFragment : BaseFragment<CategoryPresenter>(), CategoryContract.Vie
             pullToRefresh()
         }
         recyclerView.layoutManager = LinearLayoutManager(this.activity)
-        recyclerView.adapter = CategoryAdapter(datas)
+        recyclerView.adapter = CategoryAdapter(datas, this.mPresenter!!)
+
         recyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
             var lastVisibleItem: Int = 0
             override fun onScrollStateChanged(recyclerView: RecyclerView?, newState: Int) {

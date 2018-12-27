@@ -2,11 +2,13 @@ package com.hardlove.cl.water.mvp.presenter
 
 import android.app.Application
 import com.hardlove.cl.water.mvp.contract.CategoryContract
+import com.hardlove.cl.water.mvp.model.entity.BaseResult
 import com.jess.arms.di.scope.FragmentScope
 import com.jess.arms.http.imageloader.ImageLoader
 import com.jess.arms.integration.AppManager
 import com.jess.arms.mvp.BasePresenter
 import com.jess.arms.utils.RxLifecycleUtils
+import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import me.jessyan.armscomponent.commonsdk.utils.MLogger
 import me.jessyan.armscomponent.commonsdk.utils.RxUtil
@@ -55,4 +57,34 @@ constructor(model: CategoryContract.Model, rootView: CategoryContract.View) :
                     MLogger.tag(TAG).e("请求失败：${it.localizedMessage}")
                 })
     }
+
+    /**
+     * 收藏文章
+     */
+    fun collectArticl(id: Int): Observable<BaseResult<Any>> {
+       return mModel.collectArticle(id).compose(RxUtil.io_main())
+                .doOnSubscribe {
+                    mRootView.showLoading()
+                }.doFinally {
+                    mRootView.hideLoading()
+                }
+                .subscribeOn(AndroidSchedulers.mainThread())
+                .compose(RxLifecycleUtils.bindToLifecycle(mRootView))
+    }
+
+    /**
+     * 取消收藏文章
+     */
+    fun unCollectArticl(id: Int): Observable<BaseResult<Any>> {
+        return mModel.unCollectArticle(id).compose(RxUtil.io_main())
+                .doOnSubscribe {
+                    mRootView.showLoading()
+                }.doFinally {
+                    mRootView.hideLoading()
+                }
+                .subscribeOn(AndroidSchedulers.mainThread())
+                .compose(RxLifecycleUtils.bindToLifecycle(mRootView))
+    }
+
+
 }
