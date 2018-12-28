@@ -3,6 +3,7 @@ package com.hardlove.cl.water.mvp.model.api.service;
 import com.hardlove.cl.water.mvp.model.entity.ArticleResult;
 import com.hardlove.cl.water.mvp.model.entity.BaseResult;
 import com.hardlove.cl.water.mvp.model.entity.Chapter;
+import com.hardlove.cl.water.mvp.model.entity.CollectListResult;
 
 import java.util.List;
 
@@ -54,4 +55,13 @@ public interface WaterService {
     @Headers({DOMAIN_NAME_HEADER + WATER_DOMAIN_NAME})
     @POST("/lg/uncollect_originId/{id}/json")
     Observable<BaseResult<Object>> unCollectArticle(@Path("id") int id);
+
+    /**
+     *获取文章收藏列表
+     */
+    @Headers({DOMAIN_NAME_HEADER + WATER_DOMAIN_NAME})
+    @GET("/lg/collect/list/{page}/json")
+    Observable<CollectListResult> queryCollectArticles(@Path("page") int currentPage);
+
+
 }

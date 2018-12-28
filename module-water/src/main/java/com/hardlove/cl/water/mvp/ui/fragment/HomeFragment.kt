@@ -74,7 +74,7 @@ class HomeFragment : BaseFragment<HomePresenter>(), HomeContract.View {
 
     override fun onQueryChaptersSucceed(results: List<Chapter>?) {
         //获取闲读的主分类成功时回调
-        allCategories = results!!.sortedBy {
+        allCategories = results!!.sortedByDescending {
             it.name
         }
         if (allCategories.isNotEmpty()) {
